@@ -1,0 +1,1996 @@
+
+
+Azure Functions Core Tools
+Core Tools Version:       4.12.0+21d180f3f62481fc8035563798e6d970d8eb0ebb (64-bit)
+Function Runtime Version: 4.1048.200.26180
+
+[2026-06-09T04:55:43.658Z] Worker process started and initialized.
+
+Functions:
+
+	storage_inventory_orchestrator:  http://localhost:7073/api/start-inventory
+
+	storage_inventory_worker: queueTrigger
+
+For detailed output, run func with --verbose flag.
+[2026-06-09T04:55:48.754Z] Executing 'Functions.storage_inventory_worker' (Reason='New queue message detected on 'inventory-tasks'.', Id=739b54be-6b64-4b6e-bf6f-b0813eaa595d)
+[2026-06-09T04:55:48.756Z] Trigger Details: MessageId: e4da027d-8111-498d-8855-347865f77e1e, DequeueCount: 6, InsertedOn: 2026-06-09T04:53:01.000+00:00
+[2026-06-09T04:55:48.793Z] Executing 'Functions.storage_inventory_worker' (Reason='New queue message detected on 'inventory-tasks'.', Id=72df6697-4f15-4d39-aaf8-12ffcd92c3e4)
+[2026-06-09T04:55:48.793Z] Trigger Details: MessageId: ad4af52a-7e96-4d2d-b585-dba9fcf37049, DequeueCount: 7, InsertedOn: 2026-06-09T04:52:28.000+00:00
+[2026-06-09T04:55:48.853Z] Worker Instance Started. Processing a batch of storage accounts...
+[2026-06-09T04:55:48.853Z] Worker Instance Started. Processing a batch of storage accounts...
+[2026-06-09T04:55:48.856Z] No environment configuration found.
+[2026-06-09T04:55:48.859Z] ManagedIdentityCredential will use IMDS
+[2026-06-09T04:55:48.856Z] No environment configuration found.
+[2026-06-09T04:55:48.861Z] ManagedIdentityCredential will use IMDS
+[2026-06-09T04:55:48.864Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:55:48.866Z] Request method: 'GET'
+[2026-06-09T04:55:48.868Z] Request headers:
+[2026-06-09T04:55:48.868Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:48.868Z] No body was attached to the request
+[2026-06-09T04:55:48.868Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:55:48.871Z] Request method: 'GET'
+[2026-06-09T04:55:48.872Z] Request headers:
+[2026-06-09T04:55:48.872Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:48.872Z] No body was attached to the request
+[2026-06-09T04:55:48.878Z] Response status: 401
+[2026-06-09T04:55:48.878Z] Response headers:
+[2026-06-09T04:55:48.878Z]     'Content-Length': '0'
+[2026-06-09T04:55:48.880Z]     'Date': 'Tue, 09 Jun 2026 04:55:47 GMT'
+[2026-06-09T04:55:48.880Z]     'Server': 'EC2ws'
+[2026-06-09T04:55:48.880Z]     'Connection': 'close'
+[2026-06-09T04:55:48.880Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:55:48.880Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:55:48.880Z] Request method: 'GET'
+[2026-06-09T04:55:48.880Z] Request headers:
+[2026-06-09T04:55:48.880Z]     'Metadata': 'REDACTED'
+[2026-06-09T04:55:48.881Z]     'x-client-SKU': 'REDACTED'
+[2026-06-09T04:55:48.881Z]     'x-client-Ver': 'REDACTED'
+[2026-06-09T04:55:48.881Z]     'x-ms-client-request-id': '55d5fc8a-d7b4-40c0-b361-6417e4074109'
+[2026-06-09T04:55:48.881Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:48.881Z] No body was attached to the request
+[2026-06-09T04:55:48.881Z] Response status: 401
+[2026-06-09T04:55:48.883Z] Response headers:
+[2026-06-09T04:55:48.883Z]     'Content-Length': '0'
+[2026-06-09T04:55:48.883Z]     'Date': 'Tue, 09 Jun 2026 04:55:47 GMT'
+[2026-06-09T04:55:48.883Z]     'Server': 'EC2ws'
+[2026-06-09T04:55:48.883Z]     'Connection': 'close'
+[2026-06-09T04:55:48.883Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:55:48.883Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:55:48.884Z] Request method: 'GET'
+[2026-06-09T04:55:48.885Z] Request headers:
+[2026-06-09T04:55:48.885Z]     'Metadata': 'REDACTED'
+[2026-06-09T04:55:48.885Z]     'x-client-SKU': 'REDACTED'
+[2026-06-09T04:55:48.885Z]     'x-client-Ver': 'REDACTED'
+[2026-06-09T04:55:48.885Z]     'x-ms-client-request-id': '00d80a00-a67b-4248-8dd0-774d155b2ff2'
+[2026-06-09T04:55:48.885Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:48.885Z] No body was attached to the request
+[2026-06-09T04:55:48.886Z] Response status: 401
+[2026-06-09T04:55:48.886Z] Response headers:
+[2026-06-09T04:55:48.886Z]     'Content-Length': '0'
+[2026-06-09T04:55:48.886Z]     'Date': 'Tue, 09 Jun 2026 04:55:47 GMT'
+[2026-06-09T04:55:48.886Z]     'Server': 'EC2ws'
+[2026-06-09T04:55:48.886Z]     'Connection': 'close'
+[2026-06-09T04:55:48.886Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:55:48.889Z] Response status: 401
+[2026-06-09T04:55:48.889Z] Response headers:
+[2026-06-09T04:55:48.889Z]     'Content-Length': '0'
+[2026-06-09T04:55:48.889Z]     'Date': 'Tue, 09 Jun 2026 04:55:47 GMT'
+[2026-06-09T04:55:48.889Z]     'Server': 'EC2ws'
+[2026-06-09T04:55:48.889Z]     'Connection': 'close'
+[2026-06-09T04:55:48.889Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:55:50.406Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:50.406Z] Request URL: 'https://stinvhost9922.table.core.windows.net/InventoryWatermarks(PartitionKey='scanner',RowKey='last_sync_date')'
+[2026-06-09T04:55:50.406Z] Request method: 'GET'
+[2026-06-09T04:55:50.406Z] Request headers:
+[2026-06-09T04:55:50.406Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:50.406Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:55:50.406Z]     'Accept': 'application/json;odata=minimalmetadata'
+[2026-06-09T04:55:50.406Z]     'x-ms-client-request-id': 'b80cacc0-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:50.406Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:50.406Z]     'Date': 'Tue, 09 Jun 2026 04:55:48 GMT'
+[2026-06-09T04:55:50.406Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:50.407Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:50.407Z] No body was attached to the request
+[2026-06-09T04:55:50.517Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:50.519Z] Request URL: 'https://stinvhost9922.table.core.windows.net/InventoryWatermarks(PartitionKey='scanner',RowKey='last_sync_date')'
+[2026-06-09T04:55:50.519Z] Request method: 'GET'
+[2026-06-09T04:55:50.519Z] Request headers:
+[2026-06-09T04:55:50.519Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:50.519Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:55:50.519Z]     'Accept': 'application/json;odata=minimalmetadata'
+[2026-06-09T04:55:50.519Z]     'x-ms-client-request-id': 'b80d862c-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:50.519Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:50.519Z]     'Date': 'Tue, 09 Jun 2026 04:55:48 GMT'
+[2026-06-09T04:55:50.519Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:50.519Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:50.519Z] No body was attached to the request
+[2026-06-09T04:55:50.575Z] Host lock lease acquired by instance ID '0000000000000000000000003B47C8DA'.
+[2026-06-09T04:55:50.718Z] Response status: 404
+[2026-06-09T04:55:50.719Z] Response headers:
+[2026-06-09T04:55:50.719Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:50.719Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:55:50.719Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:50.719Z]     'x-ms-request-id': '1af40b58-7002-001b-58cc-f7ef00000000'
+[2026-06-09T04:55:50.719Z]     'x-ms-client-request-id': 'b80cacc0-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:50.719Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:50.719Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:55:50.719Z]     'Date': 'Tue, 09 Jun 2026 04:55:50 GMT'
+[2026-06-09T04:55:50.719Z] No existing watermark found. Using default incremental window.
+[2026-06-09T04:55:50.719Z] Incremental Scan Mode: Only scanning blobs modified AFTER 2026-05-10 04:55:50.713893+00:00
+[2026-06-09T04:55:50.719Z] Scanning Storage Account: inventoryprojecttest
+[2026-06-09T04:55:50.770Z] Response status: 404
+[2026-06-09T04:55:50.770Z] Response headers:
+[2026-06-09T04:55:50.770Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:50.770Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:55:50.770Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:50.770Z]     'x-ms-request-id': '57602a2e-a002-006a-4fcc-f7092b000000'
+[2026-06-09T04:55:50.770Z]     'x-ms-client-request-id': 'b80d862c-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:50.770Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:50.770Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:55:50.770Z]     'Date': 'Tue, 09 Jun 2026 04:55:50 GMT'
+[2026-06-09T04:55:50.770Z] No existing watermark found. Using default incremental window.
+[2026-06-09T04:55:50.770Z] Incremental Scan Mode: Only scanning blobs modified AFTER 2026-05-10 04:55:50.765601+00:00
+[2026-06-09T04:55:50.770Z] Scanning Storage Account: inventoryprojecttest
+[2026-06-09T04:55:51.595Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:51.596Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:51.596Z] Request URL: 'https://inventoryprojecttest.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:51.598Z] Request method: 'GET'
+[2026-06-09T04:55:51.598Z] Request headers:
+[2026-06-09T04:55:51.598Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:51.598Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:51.598Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:51.598Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:51.598Z]     'x-ms-client-request-id': 'b9294dde-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:51.598Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:51.598Z] No body was attached to the request
+[2026-06-09T04:55:51.760Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:51.763Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:51.763Z] Request URL: 'https://inventoryprojecttest.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:51.763Z] Request method: 'GET'
+[2026-06-09T04:55:51.763Z] Request headers:
+[2026-06-09T04:55:51.763Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:51.763Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:51.763Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:51.763Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:51.763Z]     'x-ms-client-request-id': 'b93146a6-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:51.763Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:51.763Z] No body was attached to the request
+[2026-06-09T04:55:52.940Z] Response status: 200
+[2026-06-09T04:55:52.941Z] Response headers:
+[2026-06-09T04:55:52.941Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:52.941Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:52.941Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:52.941Z]     'x-ms-request-id': 'e1440a50-001e-004c-13cc-f76208000000'
+[2026-06-09T04:55:52.941Z]     'x-ms-client-request-id': 'b9294dde-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:52.941Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:52.941Z]     'Date': 'Tue, 09 Jun 2026 04:55:52 GMT'
+[2026-06-09T04:55:52.942Z] Request URL: 'https://inventoryprojecttest.blob.core.windows.net/containertest?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:52.942Z] Request method: 'GET'
+[2026-06-09T04:55:52.942Z] Request headers:
+[2026-06-09T04:55:52.942Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:52.942Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:52.943Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:52.943Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:52.943Z]     'x-ms-client-request-id': 'ba7c2170-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:52.943Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:52.943Z] No body was attached to the request
+[2026-06-09T04:55:52.942Z] Response status: 200
+[2026-06-09T04:55:52.943Z] Response headers:
+[2026-06-09T04:55:52.943Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:52.943Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:52.943Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:52.943Z]     'x-ms-request-id': '43dd398d-601e-0028-1ecc-f79390000000'
+[2026-06-09T04:55:52.943Z]     'x-ms-client-request-id': 'b93146a6-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:52.943Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:52.943Z]     'Date': 'Tue, 09 Jun 2026 04:55:52 GMT'
+[2026-06-09T04:55:52.943Z] Request URL: 'https://inventoryprojecttest.blob.core.windows.net/containertest?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:52.943Z] Request method: 'GET'
+[2026-06-09T04:55:52.943Z] Request headers:
+[2026-06-09T04:55:52.943Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:52.943Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:52.943Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:52.943Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:52.943Z]     'x-ms-client-request-id': 'ba7caf8c-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:52.943Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:52.943Z] No body was attached to the request
+[2026-06-09T04:55:52.970Z] Response status: 403
+[2026-06-09T04:55:52.971Z] Response headers:
+[2026-06-09T04:55:52.971Z]     'Content-Length': '279'
+[2026-06-09T04:55:52.971Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:52.972Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:52.973Z]     'x-ms-request-id': 'e1440dd6-001e-004c-28cc-f76208000000'
+[2026-06-09T04:55:52.973Z]     'x-ms-client-request-id': 'ba7c2170-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:52.973Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:52.973Z]     'x-ms-error-code': 'AuthorizationPermissionMismatch'
+[2026-06-09T04:55:52.973Z]     'Date': 'Tue, 09 Jun 2026 04:55:52 GMT'
+[2026-06-09T04:55:52.973Z] Failed to scan account inventoryprojecttest: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:52.973Z] RequestId:e1440dd6-001e-004c-28cc-f76208000000
+[2026-06-09T04:55:52.973Z] Time:2026-06-09T04:55:52.9520284Z
+[2026-06-09T04:55:52.973Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:55:52.973Z] Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:52.973Z] RequestId:e1440dd6-001e-004c-28cc-f76208000000
+[2026-06-09T04:55:52.973Z] Time:2026-06-09T04:55:52.9520284Z</Message></Error>
+[2026-06-09T04:55:52.973Z] Scanning Storage Account: inventoryprojtest8b93
+[2026-06-09T04:55:52.978Z] Response status: 403
+[2026-06-09T04:55:52.978Z] Response headers:
+[2026-06-09T04:55:52.978Z]     'Content-Length': '279'
+[2026-06-09T04:55:52.978Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:52.978Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:52.978Z]     'x-ms-request-id': '43dd3c52-601e-0028-6bcc-f79390000000'
+[2026-06-09T04:55:52.978Z]     'x-ms-client-request-id': 'ba7caf8c-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:52.978Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:52.978Z]     'x-ms-error-code': 'AuthorizationPermissionMismatch'
+[2026-06-09T04:55:52.978Z]     'Date': 'Tue, 09 Jun 2026 04:55:52 GMT'
+[2026-06-09T04:55:52.979Z] Failed to scan account inventoryprojecttest: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:52.979Z] RequestId:43dd3c52-601e-0028-6bcc-f79390000000
+[2026-06-09T04:55:52.979Z] Time:2026-06-09T04:55:52.9564186Z
+[2026-06-09T04:55:52.979Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:55:52.979Z] Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:52.980Z] RequestId:43dd3c52-601e-0028-6bcc-f79390000000
+[2026-06-09T04:55:52.980Z] Time:2026-06-09T04:55:52.9564186Z</Message></Error>
+[2026-06-09T04:55:52.980Z] Scanning Storage Account: inventoryprojtest8b93
+[2026-06-09T04:55:53.823Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:53.823Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:53.823Z] Request URL: 'https://inventoryprojtest8b93.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:53.823Z] Request method: 'GET'
+[2026-06-09T04:55:53.826Z] Request headers:
+[2026-06-09T04:55:53.826Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:53.826Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:53.827Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:53.827Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:53.827Z]     'x-ms-client-request-id': 'ba7c2171-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:53.827Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:53.827Z] No body was attached to the request
+[2026-06-09T04:55:53.883Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:53.883Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:53.883Z] Request URL: 'https://inventoryprojtest8b93.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:53.883Z] Request method: 'GET'
+[2026-06-09T04:55:53.883Z] Request headers:
+[2026-06-09T04:55:53.883Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:53.883Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:53.883Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:53.883Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:53.883Z]     'x-ms-client-request-id': 'ba7caf8d-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:53.883Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:53.883Z] No body was attached to the request
+[2026-06-09T04:55:53.979Z] Response status: 200
+[2026-06-09T04:55:53.979Z] Response headers:
+[2026-06-09T04:55:53.979Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:53.979Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:53.980Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:53.980Z]     'x-ms-request-id': '9a524f99-901e-005e-54cc-f719d8000000'
+[2026-06-09T04:55:53.980Z]     'x-ms-client-request-id': 'ba7c2171-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:53.980Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:53.980Z]     'Date': 'Tue, 09 Jun 2026 04:55:53 GMT'
+[2026-06-09T04:55:53.981Z]   Skipping infrastructure container: app-package-testinventoryproj-e4b4a42
+[2026-06-09T04:55:53.981Z]   Skipping infrastructure container: azure-webjobs-hosts
+[2026-06-09T04:55:53.981Z]   Skipping infrastructure container: azure-webjobs-secrets
+[2026-06-09T04:55:54.015Z] Response status: 200
+[2026-06-09T04:55:54.016Z] Response headers:
+[2026-06-09T04:55:54.016Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:54.016Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:54.016Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:54.016Z]     'x-ms-request-id': '4821fae5-d01e-005f-1ecc-f74604000000'
+[2026-06-09T04:55:54.016Z]     'x-ms-client-request-id': 'ba7caf8d-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:54.016Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:54.016Z]     'Date': 'Tue, 09 Jun 2026 04:55:53 GMT'
+[2026-06-09T04:55:54.016Z]   Skipping infrastructure container: app-package-testinventoryproj-e4b4a42
+[2026-06-09T04:55:54.016Z]   Skipping infrastructure container: azure-webjobs-hosts
+[2026-06-09T04:55:54.016Z]   Skipping infrastructure container: azure-webjobs-secrets
+[2026-06-09T04:55:54.749Z] Executing 'Functions.storage_inventory_orchestrator' (Reason='This function was programmatically called via the host APIs.', Id=42d95a71-9d18-438a-a06b-383dacebeddc)
+[2026-06-09T04:55:54.775Z] Starting Enterprise Storage Inventory Discovery via HTTP Trigger...
+[2026-06-09T04:55:54.775Z] No environment configuration found.
+[2026-06-09T04:55:54.775Z] ManagedIdentityCredential will use IMDS
+[2026-06-09T04:55:54.775Z] Executing ARG Query to discover storage accounts...
+[2026-06-09T04:55:54.775Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:55:54.775Z] Request method: 'GET'
+[2026-06-09T04:55:54.775Z] Request headers:
+[2026-06-09T04:55:54.775Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:54.775Z] No body was attached to the request
+[2026-06-09T04:55:54.779Z] Response status: 401
+[2026-06-09T04:55:54.779Z] Response headers:
+[2026-06-09T04:55:54.779Z]     'Content-Length': '0'
+[2026-06-09T04:55:54.779Z]     'Date': 'Tue, 09 Jun 2026 04:55:53 GMT'
+[2026-06-09T04:55:54.779Z]     'Server': 'EC2ws'
+[2026-06-09T04:55:54.779Z]     'Connection': 'close'
+[2026-06-09T04:55:54.779Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:55:54.779Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:55:54.779Z] Request method: 'GET'
+[2026-06-09T04:55:54.779Z] Request headers:
+[2026-06-09T04:55:54.779Z]     'Metadata': 'REDACTED'
+[2026-06-09T04:55:54.779Z]     'x-client-SKU': 'REDACTED'
+[2026-06-09T04:55:54.779Z]     'x-client-Ver': 'REDACTED'
+[2026-06-09T04:55:54.780Z]     'x-ms-client-request-id': '67e85f35-566a-491c-8c5c-f938484fe639'
+[2026-06-09T04:55:54.780Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:54.780Z] No body was attached to the request
+[2026-06-09T04:55:54.784Z] Response status: 401
+[2026-06-09T04:55:54.784Z] Response headers:
+[2026-06-09T04:55:54.784Z]     'Content-Length': '0'
+[2026-06-09T04:55:54.784Z]     'Date': 'Tue, 09 Jun 2026 04:55:53 GMT'
+[2026-06-09T04:55:54.784Z]     'Server': 'EC2ws'
+[2026-06-09T04:55:54.784Z]     'Connection': 'close'
+[2026-06-09T04:55:54.784Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:55:55.012Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:55.012Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:55.012Z] Request URL: 'https://inventoryprojtest8b93.file.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:55.012Z] Request method: 'GET'
+[2026-06-09T04:55:55.012Z] Request headers:
+[2026-06-09T04:55:55.012Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:55.012Z]     'x-ms-file-request-intent': 'REDACTED'
+[2026-06-09T04:55:55.012Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:55.012Z]     'User-Agent': 'azsdk-python-storage-file-share/12.25.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:55.012Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:55.012Z]     'x-ms-client-request-id': 'ba7c2172-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:55.012Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:55.012Z] No body was attached to the request
+[2026-06-09T04:55:55.068Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:55.070Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:55.070Z] Request URL: 'https://inventoryprojtest8b93.file.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:55.070Z] Request method: 'GET'
+[2026-06-09T04:55:55.070Z] Request headers:
+[2026-06-09T04:55:55.070Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:55.070Z]     'x-ms-file-request-intent': 'REDACTED'
+[2026-06-09T04:55:55.070Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:55.070Z]     'User-Agent': 'azsdk-python-storage-file-share/12.25.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:55.070Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:55.070Z]     'x-ms-client-request-id': 'bb20c806-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:55.070Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:55.070Z] No body was attached to the request
+[2026-06-09T04:55:55.176Z] Response status: 200
+[2026-06-09T04:55:55.176Z] Response headers:
+[2026-06-09T04:55:55.176Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:55.176Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:55.176Z]     'Server': 'Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:55.176Z]     'x-ms-request-id': 'bf79d39a-a01a-0037-1fcc-f72094000000'
+[2026-06-09T04:55:55.176Z]     'x-ms-client-request-id': 'ba7c2172-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:55.176Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:55.176Z]     'Date': 'Tue, 09 Jun 2026 04:55:54 GMT'
+[2026-06-09T04:55:55.176Z] Scanning Storage Account: inventorytestregion
+[2026-06-09T04:55:55.230Z] Response status: 200
+[2026-06-09T04:55:55.230Z] Response headers:
+[2026-06-09T04:55:55.230Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:55.230Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:55.230Z]     'Server': 'Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:55.230Z]     'x-ms-request-id': '6353ae21-a01a-0045-0acc-f727db000000'
+[2026-06-09T04:55:55.230Z]     'x-ms-client-request-id': 'bb20c806-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:55.230Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:55.230Z]     'Date': 'Tue, 09 Jun 2026 04:55:54 GMT'
+[2026-06-09T04:55:55.230Z] Scanning Storage Account: inventorytestregion
+[2026-06-09T04:55:56.092Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:56.092Z] Request URL: 'https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01'
+[2026-06-09T04:55:56.092Z] Request method: 'POST'
+[2026-06-09T04:55:56.092Z] Request headers:
+[2026-06-09T04:55:56.092Z]     'Content-Type': 'application/json'
+[2026-06-09T04:55:56.092Z]     'Content-Length': '233'
+[2026-06-09T04:55:56.092Z]     'Accept': 'application/json'
+[2026-06-09T04:55:56.092Z]     'x-ms-client-request-id': 'bb9455a0-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:56.092Z]     'User-Agent': 'azsdk-python-mgmt-resourcegraph/8.0.1 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:56.092Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:56.092Z] A body is sent with the request
+[2026-06-09T04:55:56.227Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:56.230Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:56.230Z] Request URL: 'https://inventorytestregion.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:56.230Z] Request method: 'GET'
+[2026-06-09T04:55:56.230Z] Request headers:
+[2026-06-09T04:55:56.230Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:56.230Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:56.230Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:56.230Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:56.230Z]     'x-ms-client-request-id': 'bbd1b94a-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:56.230Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:56.231Z] No body was attached to the request
+[2026-06-09T04:55:56.425Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:56.425Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:56.425Z] Request URL: 'https://inventorytestregion.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:56.425Z] Request method: 'GET'
+[2026-06-09T04:55:56.425Z] Request headers:
+[2026-06-09T04:55:56.425Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:56.425Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:56.425Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:56.426Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:56.426Z]     'x-ms-client-request-id': 'bb20c807-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:56.426Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:56.426Z] No body was attached to the request
+[2026-06-09T04:55:56.603Z] Response status: 200
+[2026-06-09T04:55:56.603Z] Response headers:
+[2026-06-09T04:55:56.603Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:55:56.603Z]     'Pragma': 'no-cache'
+[2026-06-09T04:55:56.603Z]     'Content-Length': '583'
+[2026-06-09T04:55:56.603Z]     'Content-Type': 'application/json; charset=utf-8'
+[2026-06-09T04:55:56.604Z]     'Expires': '-1'
+[2026-06-09T04:55:56.604Z]     'Strict-Transport-Security': 'REDACTED'
+[2026-06-09T04:55:56.604Z]     'x-ms-correlation-request-id': 'REDACTED'
+[2026-06-09T04:55:56.604Z]     'x-ms-incomplete-scopes-state': 'REDACTED'
+[2026-06-09T04:55:56.604Z]     'x-ms-ratelimit-remaining-tenant-resource-requests': '14'
+[2026-06-09T04:55:56.606Z]     'x-ms-user-quota-remaining': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'x-ms-user-quota-resets-after': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'x-ms-resource-graph-request-duration': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'x-ms-operation-identifier': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'x-ms-ratelimit-remaining-tenant-reads': '249'
+[2026-06-09T04:55:56.606Z]     'x-ms-request-id': '0bf87894-4525-40ff-b9c0-27d4d077c88e'
+[2026-06-09T04:55:56.606Z]     'x-ms-routing-request-id': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'X-Cache': 'REDACTED'
+[2026-06-09T04:55:56.606Z]     'X-MSEdge-Ref': 'Ref A: 4450488CB60C431094A8FF7B99FD775F Ref B: PNQ231110906034 Ref C: 2026-06-09T04:55:56Z'
+[2026-06-09T04:55:56.606Z]     'Date': 'Tue, 09 Jun 2026 04:55:55 GMT'
+[2026-06-09T04:55:56.606Z] Discovery Complete: Found 4 storage accounts.
+[2026-06-09T04:55:56.606Z] Splitting workload into 1 parallel batches.
+[2026-06-09T04:55:57.047Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:57.048Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:57.048Z] Request URL: 'https://stinvhost9922.queue.core.windows.net/inventory-tasks?comp=REDACTED'
+[2026-06-09T04:55:57.048Z] Request method: 'GET'
+[2026-06-09T04:55:57.048Z] Request headers:
+[2026-06-09T04:55:57.048Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.049Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:57.049Z]     'User-Agent': 'azsdk-python-storage-queue/12.16.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:57.049Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:57.049Z]     'x-ms-client-request-id': 'bcaba006-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.049Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:57.049Z] No body was attached to the request
+[2026-06-09T04:55:57.066Z] Response status: 200
+[2026-06-09T04:55:57.066Z] Response headers:
+[2026-06-09T04:55:57.066Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:57.066Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:57.066Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:57.066Z]     'x-ms-request-id': 'a567b67f-d01e-0074-19cc-f7d7a2000000'
+[2026-06-09T04:55:57.066Z]     'x-ms-client-request-id': 'bbd1b94a-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.066Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.066Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:57.069Z] Request URL: 'https://inventorytestregion.blob.core.windows.net/testcontainer?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:57.069Z] Request method: 'GET'
+[2026-06-09T04:55:57.069Z] Request headers:
+[2026-06-09T04:55:57.069Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.069Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:57.069Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:57.069Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:57.069Z]     'x-ms-client-request-id': 'bcf2ab22-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.069Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:57.069Z] No body was attached to the request
+[2026-06-09T04:55:57.074Z] Response status: 200
+[2026-06-09T04:55:57.074Z] Response headers:
+[2026-06-09T04:55:57.074Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:57.074Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:57.074Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:57.074Z]     'x-ms-request-id': '2a83a4bc-a01e-0051-7fcc-f77ede000000'
+[2026-06-09T04:55:57.074Z]     'x-ms-client-request-id': 'bb20c807-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.074Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.074Z]     'Date': 'Tue, 09 Jun 2026 04:55:56 GMT'
+[2026-06-09T04:55:57.074Z] Request URL: 'https://inventorytestregion.blob.core.windows.net/testcontainer?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:57.074Z] Request method: 'GET'
+[2026-06-09T04:55:57.074Z] Request headers:
+[2026-06-09T04:55:57.074Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.074Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:57.074Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:57.074Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:57.074Z]     'x-ms-client-request-id': 'bcf35748-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.074Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:57.074Z] No body was attached to the request
+[2026-06-09T04:55:57.135Z] Response status: 403
+[2026-06-09T04:55:57.136Z] Response headers:
+[2026-06-09T04:55:57.136Z]     'Content-Length': '279'
+[2026-06-09T04:55:57.136Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:57.136Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:57.136Z]     'x-ms-request-id': '2a83a614-a01e-0051-1fcc-f77ede000000'
+[2026-06-09T04:55:57.136Z]     'x-ms-client-request-id': 'bcf35748-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.136Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.136Z]     'x-ms-error-code': 'AuthorizationPermissionMismatch'
+[2026-06-09T04:55:57.136Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:57.137Z] Failed to scan account inventorytestregion: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:57.137Z] RequestId:2a83a614-a01e-0051-1fcc-f77ede000000
+[2026-06-09T04:55:57.137Z] Time:2026-06-09T04:55:57.1016336Z
+[2026-06-09T04:55:57.137Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:55:57.137Z] Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:57.137Z] RequestId:2a83a614-a01e-0051-1fcc-f77ede000000
+[2026-06-09T04:55:57.137Z] Time:2026-06-09T04:55:57.1016336Z</Message></Error>
+[2026-06-09T04:55:57.137Z] Scanning Storage Account: stinvhost9922
+[2026-06-09T04:55:57.139Z] Response status: 403
+[2026-06-09T04:55:57.139Z] Response headers:
+[2026-06-09T04:55:57.139Z]     'Content-Length': '279'
+[2026-06-09T04:55:57.139Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:57.139Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:57.139Z]     'x-ms-request-id': 'a567b991-d01e-0074-6ccc-f7d7a2000000'
+[2026-06-09T04:55:57.139Z]     'x-ms-client-request-id': 'bcf2ab22-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.139Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.139Z]     'x-ms-error-code': 'AuthorizationPermissionMismatch'
+[2026-06-09T04:55:57.139Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:57.139Z] Failed to scan account inventorytestregion: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:57.139Z] RequestId:a567b991-d01e-0074-6ccc-f7d7a2000000
+[2026-06-09T04:55:57.139Z] Time:2026-06-09T04:55:57.1045175Z
+[2026-06-09T04:55:57.139Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:55:57.139Z] Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:55:57.139Z] RequestId:a567b991-d01e-0074-6ccc-f7d7a2000000
+[2026-06-09T04:55:57.139Z] Time:2026-06-09T04:55:57.1045175Z</Message></Error>
+[2026-06-09T04:55:57.139Z] Scanning Storage Account: stinvhost9922
+[2026-06-09T04:55:57.310Z] Response status: 200
+[2026-06-09T04:55:57.310Z] Response headers:
+[2026-06-09T04:55:57.310Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:55:57.310Z]     'Content-Length': '0'
+[2026-06-09T04:55:57.310Z]     'Server': 'Windows-Azure-Queue/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:57.310Z]     'x-ms-request-id': 'b71ca32b-e003-0009-34cc-f794d0000000'
+[2026-06-09T04:55:57.310Z]     'x-ms-client-request-id': 'bcaba006-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.310Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.310Z]     'x-ms-approximate-messages-count': 'REDACTED'
+[2026-06-09T04:55:57.310Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:57.310Z] Request URL: 'https://stinvhost9922.queue.core.windows.net/inventory-tasks/messages'
+[2026-06-09T04:55:57.310Z] Request method: 'POST'
+[2026-06-09T04:55:57.310Z] Request headers:
+[2026-06-09T04:55:57.310Z]     'Content-Length': '745'
+[2026-06-09T04:55:57.310Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.310Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:57.310Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:57.310Z]     'User-Agent': 'azsdk-python-storage-queue/12.16.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:57.310Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:57.310Z]     'x-ms-client-request-id': 'bcaba007-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.310Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:57.310Z] A body is sent with the request
+[2026-06-09T04:55:57.376Z] Response status: 201
+[2026-06-09T04:55:57.377Z] Response headers:
+[2026-06-09T04:55:57.377Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:57.377Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:57.377Z]     'Server': 'Windows-Azure-Queue/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:57.377Z]     'x-ms-request-id': 'b71ca33b-e003-0009-40cc-f794d0000000'
+[2026-06-09T04:55:57.377Z]     'x-ms-client-request-id': 'bcaba007-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.377Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.377Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:57.377Z] Dispatched batch 1/1 with 4 accounts.
+[2026-06-09T04:55:57.377Z] Successfully dispatched 1 batches to the Worker Queue (run_id=20260609T045557_1f2d6f45).
+[2026-06-09T04:55:57.447Z] Executed 'Functions.storage_inventory_orchestrator' (Succeeded, Id=42d95a71-9d18-438a-a06b-383dacebeddc, Duration=2690ms)
+[2026-06-09T04:55:57.932Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:57.932Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:57.932Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:57.932Z] Request method: 'GET'
+[2026-06-09T04:55:57.932Z] Request headers:
+[2026-06-09T04:55:57.932Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:57.932Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:57.932Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:57.932Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:57.932Z]     'x-ms-client-request-id': 'bcf35749-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:57.932Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:57.932Z] No body was attached to the request
+[2026-06-09T04:55:58.011Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:58.012Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:58.012Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:58.012Z] Request method: 'GET'
+[2026-06-09T04:55:58.012Z] Request headers:
+[2026-06-09T04:55:58.012Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.012Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:58.012Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:58.012Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:58.012Z]     'x-ms-client-request-id': 'bcf2ab23-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.012Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:58.012Z] No body was attached to the request
+[2026-06-09T04:55:58.264Z] Response status: 200
+[2026-06-09T04:55:58.264Z] Response headers:
+[2026-06-09T04:55:58.264Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:58.264Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:58.264Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:58.264Z]     'x-ms-request-id': '5773b10c-e01e-0026-28cc-f7991b000000'
+[2026-06-09T04:55:58.264Z]     'x-ms-client-request-id': 'bcf35749-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.264Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.264Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:58.264Z]   Skipping infrastructure container: app-package-func-lumen-inventory-d6058ff
+[2026-06-09T04:55:58.264Z]   Skipping infrastructure container: azure-webjobs-hosts
+[2026-06-09T04:55:58.264Z]   Skipping infrastructure container: azure-webjobs-secrets
+[2026-06-09T04:55:58.264Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:58.264Z] Request method: 'GET'
+[2026-06-09T04:55:58.264Z] Request headers:
+[2026-06-09T04:55:58.264Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.264Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:58.264Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:58.264Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:58.264Z]     'x-ms-client-request-id': 'bcf3574a-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.264Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:58.264Z] No body was attached to the request
+[2026-06-09T04:55:58.340Z] Response status: 200
+[2026-06-09T04:55:58.340Z] Response headers:
+[2026-06-09T04:55:58.340Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:58.340Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:58.340Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:58.340Z]     'x-ms-request-id': 'e4699ade-b01e-0049-4ccc-f793e8000000'
+[2026-06-09T04:55:58.340Z]     'x-ms-client-request-id': 'bcf2ab23-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.340Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.340Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:58.341Z]   Skipping infrastructure container: app-package-func-lumen-inventory-d6058ff
+[2026-06-09T04:55:58.341Z]   Skipping infrastructure container: azure-webjobs-hosts
+[2026-06-09T04:55:58.341Z]   Skipping infrastructure container: azure-webjobs-secrets
+[2026-06-09T04:55:58.341Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:58.341Z] Request method: 'GET'
+[2026-06-09T04:55:58.341Z] Request headers:
+[2026-06-09T04:55:58.341Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.341Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:58.341Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:58.341Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:58.341Z]     'x-ms-client-request-id': 'bcf2ab24-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.341Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:58.341Z] No body was attached to the request
+[2026-06-09T04:55:58.388Z] Response status: 200
+[2026-06-09T04:55:58.388Z] Response headers:
+[2026-06-09T04:55:58.388Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:58.388Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:58.388Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:58.388Z]     'x-ms-request-id': '5773b235-e01e-0026-2fcc-f7991b000000'
+[2026-06-09T04:55:58.388Z]     'x-ms-client-request-id': 'bcf3574a-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.388Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.388Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:58.468Z] Response status: 200
+[2026-06-09T04:55:58.468Z] Response headers:
+[2026-06-09T04:55:58.468Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:58.468Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:58.468Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:58.468Z]     'x-ms-request-id': 'e4699bc1-b01e-0049-11cc-f793e8000000'
+[2026-06-09T04:55:58.468Z]     'x-ms-client-request-id': 'bcf2ab24-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:58.468Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:58.468Z]     'Date': 'Tue, 09 Jun 2026 04:55:57 GMT'
+[2026-06-09T04:55:59.001Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:59.003Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:59.004Z] Request URL: 'https://stinvhost9922.file.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:59.004Z] Request method: 'GET'
+[2026-06-09T04:55:59.004Z] Request headers:
+[2026-06-09T04:55:59.004Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:59.004Z]     'x-ms-file-request-intent': 'REDACTED'
+[2026-06-09T04:55:59.004Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:59.004Z]     'User-Agent': 'azsdk-python-storage-file-share/12.25.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:59.004Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:59.004Z]     'x-ms-client-request-id': 'bcf3574b-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:59.004Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:59.004Z] No body was attached to the request
+[2026-06-09T04:55:59.139Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:59.139Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:59.141Z] Request URL: 'https://stinvhost9922.file.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:55:59.142Z] Request method: 'GET'
+[2026-06-09T04:55:59.142Z] Request headers:
+[2026-06-09T04:55:59.142Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:59.142Z]     'x-ms-file-request-intent': 'REDACTED'
+[2026-06-09T04:55:59.142Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:59.142Z]     'User-Agent': 'azsdk-python-storage-file-share/12.25.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:59.142Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:59.142Z]     'x-ms-client-request-id': 'bcf2ab25-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:59.142Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:59.142Z] No body was attached to the request
+[2026-06-09T04:55:59.280Z] Response status: 200
+[2026-06-09T04:55:59.281Z] Response headers:
+[2026-06-09T04:55:59.281Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:59.281Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:59.281Z]     'Server': 'Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:59.281Z]     'x-ms-request-id': '202337fc-901a-0061-3ccc-f7f240000000'
+[2026-06-09T04:55:59.281Z]     'x-ms-client-request-id': 'bcf3574b-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:59.281Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:59.281Z]     'Date': 'Tue, 09 Jun 2026 04:55:58 GMT'
+[2026-06-09T04:55:59.289Z] Batch 1/1 complete. Extracted 21 newly modified blobs, 0 file shares, 2 accounts succeeded, 2 accounts failed.
+[2026-06-09T04:55:59.290Z] Storage Utilization Statistics:
+[2026-06-09T04:55:59.290Z] [
+[2026-06-09T04:55:59.290Z]   {
+[2026-06-09T04:55:59.290Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:55:59.290Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:55:59.290Z]     "TotalBlobs":21,
+[2026-06-09T04:55:59.290Z]     "TotalSizeBytes":122241
+[2026-06-09T04:55:59.290Z]   }
+[2026-06-09T04:55:59.290Z] ]
+[2026-06-09T04:55:59.290Z] Blob Metadata Sample:
+[2026-06-09T04:55:59.290Z] [
+[2026-06-09T04:55:59.290Z]   {
+[2026-06-09T04:55:59.290Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.290Z]     "ResourceGroup":"inventory_management",
+[2026-06-09T04:55:59.290Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:55:59.290Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:55:59.290Z]     "BlobName":"2026\/06\/08\/blobs_report.xlsx",
+[2026-06-09T04:55:59.290Z]     "BlobType":"BlockBlob",
+[2026-06-09T04:55:59.290Z]     "ContentType":"application\/octet-stream",
+[2026-06-09T04:55:59.290Z]     "ContentMD5":"3cf2b438cffbf16a4f799e4bb6ed54b3",
+[2026-06-09T04:55:59.290Z]     "IsDeleted":false,
+[2026-06-09T04:55:59.290Z]     "Size_Bytes":5935,
+[2026-06-09T04:55:59.290Z]     "CreationTime":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.290Z]     "LastModified":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.290Z]     "BlobTier":"Hot",
+[2026-06-09T04:55:59.290Z]     "VersionId":null,
+[2026-06-09T04:55:59.290Z]     "IsCurrentVersion":null,
+[2026-06-09T04:55:59.290Z]     "Snapshot":null,
+[2026-06-09T04:55:59.290Z]     "TagCount":null
+[2026-06-09T04:55:59.290Z]   },
+[2026-06-09T04:55:59.290Z]   {
+[2026-06-09T04:55:59.290Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.290Z]     "ResourceGroup":"inventory_management",
+[2026-06-09T04:55:59.290Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:55:59.290Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:55:59.290Z]     "BlobName":"2026\/06\/08\/blobs_snapshot.json",
+[2026-06-09T04:55:59.290Z]     "BlobType":"BlockBlob",
+[2026-06-09T04:55:59.290Z]     "ContentType":"application\/octet-stream",
+[2026-06-09T04:55:59.290Z]     "ContentMD5":"abca414c45d9c0e5af7195435d982886",
+[2026-06-09T04:55:59.290Z]     "IsDeleted":false,
+[2026-06-09T04:55:59.290Z]     "Size_Bytes":4258,
+[2026-06-09T04:55:59.290Z]     "CreationTime":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.290Z]     "LastModified":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.290Z]     "BlobTier":"Hot",
+[2026-06-09T04:55:59.290Z]     "VersionId":null,
+[2026-06-09T04:55:59.290Z]     "IsCurrentVersion":null,
+[2026-06-09T04:55:59.290Z]     "Snapshot":null,
+[2026-06-09T04:55:59.290Z]     "TagCount":null
+[2026-06-09T04:55:59.290Z]   }
+[2026-06-09T04:55:59.290Z] ]
+[2026-06-09T04:55:59.290Z] Scan Errors:
+[2026-06-09T04:55:59.290Z] [
+[2026-06-09T04:55:59.290Z]   {
+[2026-06-09T04:55:59.290Z]     "StorageAccount":"inventoryprojecttest",
+[2026-06-09T04:55:59.290Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.290Z]     "ResourceGroup":"defaultresourcegroup-sea",
+[2026-06-09T04:55:59.290Z]     "ErrorType":"HttpResponseError",
+[2026-06-09T04:55:59.290Z]     "ErrorMessage":"This request is not authorized to perform this operation using this permission.\nRequestId:43dd3c52-601e-0028-6bcc-f79390000000\nTime:2026-06-09T04:55:52.9564186Z\nErrorCode:AuthorizationPermissionMismatch\nContent: <?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>AuthorizationPermissionMismatch<\/Code><Message>This request is not authorized to perform this operation using this permission.\nRequestId:43dd3c52-601e-0028-6bcc-f79390000000\nTime:2026-06-09T04:55:52.9564186Z<\/Message><\/Error>",
+[2026-06-09T04:55:59.290Z]     "Timestamp":"2026-06-09 04:55:52"
+[2026-06-09T04:55:59.290Z]   },
+[2026-06-09T04:55:59.291Z]   {
+[2026-06-09T04:55:59.291Z]     "StorageAccount":"inventorytestregion",
+[2026-06-09T04:55:59.291Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.291Z]     "ResourceGroup":"defaultresourcegroup-sea",
+[2026-06-09T04:55:59.291Z]     "ErrorType":"HttpResponseError",
+[2026-06-09T04:55:59.291Z]     "ErrorMessage":"This request is not authorized to perform this operation using this permission.\nRequestId:2a83a614-a01e-0051-1fcc-f77ede000000\nTime:2026-06-09T04:55:57.1016336Z\nErrorCode:AuthorizationPermissionMismatch\nContent: <?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>AuthorizationPermissionMismatch<\/Code><Message>This request is not authorized to perform this operation using this permission.\nRequestId:2a83a614-a01e-0051-1fcc-f77ede000000\nTime:2026-06-09T04:55:57.1016336Z<\/Message><\/Error>",
+[2026-06-09T04:55:59.291Z]     "Timestamp":"2026-06-09 04:55:57"
+[2026-06-09T04:55:59.291Z]   }
+[2026-06-09T04:55:59.291Z] ]
+[2026-06-09T04:55:59.399Z] Response status: 200
+[2026-06-09T04:55:59.399Z] Response headers:
+[2026-06-09T04:55:59.399Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:55:59.399Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:55:59.399Z]     'Server': 'Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:55:59.399Z]     'x-ms-request-id': '45dbdfdf-a01a-0018-79cc-f70e64000000'
+[2026-06-09T04:55:59.399Z]     'x-ms-client-request-id': 'bcf2ab25-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:59.399Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:59.399Z]     'Date': 'Tue, 09 Jun 2026 04:55:58 GMT'
+[2026-06-09T04:55:59.402Z] Batch 1/1 complete. Extracted 21 newly modified blobs, 0 file shares, 2 accounts succeeded, 2 accounts failed.
+[2026-06-09T04:55:59.411Z] Storage Utilization Statistics:
+[2026-06-09T04:55:59.411Z] [
+[2026-06-09T04:55:59.411Z]   {
+[2026-06-09T04:55:59.411Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:55:59.411Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:55:59.411Z]     "TotalBlobs":21,
+[2026-06-09T04:55:59.411Z]     "TotalSizeBytes":122241
+[2026-06-09T04:55:59.411Z]   }
+[2026-06-09T04:55:59.411Z] ]
+[2026-06-09T04:55:59.411Z] Blob Metadata Sample:
+[2026-06-09T04:55:59.411Z] [
+[2026-06-09T04:55:59.411Z]   {
+[2026-06-09T04:55:59.411Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.411Z]     "ResourceGroup":"inventory_management",
+[2026-06-09T04:55:59.411Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:55:59.411Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:55:59.411Z]     "BlobName":"2026\/06\/08\/blobs_report.xlsx",
+[2026-06-09T04:55:59.411Z]     "BlobType":"BlockBlob",
+[2026-06-09T04:55:59.411Z]     "ContentType":"application\/octet-stream",
+[2026-06-09T04:55:59.411Z]     "ContentMD5":"3cf2b438cffbf16a4f799e4bb6ed54b3",
+[2026-06-09T04:55:59.411Z]     "IsDeleted":false,
+[2026-06-09T04:55:59.411Z]     "Size_Bytes":5935,
+[2026-06-09T04:55:59.411Z]     "CreationTime":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.411Z]     "LastModified":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.411Z]     "BlobTier":"Hot",
+[2026-06-09T04:55:59.411Z]     "VersionId":null,
+[2026-06-09T04:55:59.411Z]     "IsCurrentVersion":null,
+[2026-06-09T04:55:59.411Z]     "Snapshot":null,
+[2026-06-09T04:55:59.411Z]     "TagCount":null
+[2026-06-09T04:55:59.411Z]   },
+[2026-06-09T04:55:59.411Z]   {
+[2026-06-09T04:55:59.411Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.411Z]     "ResourceGroup":"inventory_management",
+[2026-06-09T04:55:59.411Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:55:59.411Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:55:59.411Z]     "BlobName":"2026\/06\/08\/blobs_snapshot.json",
+[2026-06-09T04:55:59.411Z]     "BlobType":"BlockBlob",
+[2026-06-09T04:55:59.411Z]     "ContentType":"application\/octet-stream",
+[2026-06-09T04:55:59.411Z]     "ContentMD5":"abca414c45d9c0e5af7195435d982886",
+[2026-06-09T04:55:59.411Z]     "IsDeleted":false,
+[2026-06-09T04:55:59.411Z]     "Size_Bytes":4258,
+[2026-06-09T04:55:59.411Z]     "CreationTime":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.411Z]     "LastModified":"2026-06-08 13:03:22",
+[2026-06-09T04:55:59.411Z]     "BlobTier":"Hot",
+[2026-06-09T04:55:59.411Z]     "VersionId":null,
+[2026-06-09T04:55:59.411Z]     "IsCurrentVersion":null,
+[2026-06-09T04:55:59.411Z]     "Snapshot":null,
+[2026-06-09T04:55:59.411Z]     "TagCount":null
+[2026-06-09T04:55:59.411Z]   }
+[2026-06-09T04:55:59.411Z] ]
+[2026-06-09T04:55:59.411Z] Scan Errors:
+[2026-06-09T04:55:59.411Z] [
+[2026-06-09T04:55:59.411Z]   {
+[2026-06-09T04:55:59.411Z]     "StorageAccount":"inventoryprojecttest",
+[2026-06-09T04:55:59.411Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.411Z]     "ResourceGroup":"defaultresourcegroup-sea",
+[2026-06-09T04:55:59.411Z]     "ErrorType":"HttpResponseError",
+[2026-06-09T04:55:59.411Z]     "ErrorMessage":"This request is not authorized to perform this operation using this permission.\nRequestId:e1440dd6-001e-004c-28cc-f76208000000\nTime:2026-06-09T04:55:52.9520284Z\nErrorCode:AuthorizationPermissionMismatch\nContent: <?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>AuthorizationPermissionMismatch<\/Code><Message>This request is not authorized to perform this operation using this permission.\nRequestId:e1440dd6-001e-004c-28cc-f76208000000\nTime:2026-06-09T04:55:52.9520284Z<\/Message><\/Error>",
+[2026-06-09T04:55:59.411Z]     "Timestamp":"2026-06-09 04:55:52"
+[2026-06-09T04:55:59.411Z]   },
+[2026-06-09T04:55:59.411Z]   {
+[2026-06-09T04:55:59.411Z]     "StorageAccount":"inventorytestregion",
+[2026-06-09T04:55:59.411Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:55:59.411Z]     "ResourceGroup":"defaultresourcegroup-sea",
+[2026-06-09T04:55:59.411Z]     "ErrorType":"HttpResponseError",
+[2026-06-09T04:55:59.411Z]     "ErrorMessage":"This request is not authorized to perform this operation using this permission.\nRequestId:a567b991-d01e-0074-6ccc-f7d7a2000000\nTime:2026-06-09T04:55:57.1045175Z\nErrorCode:AuthorizationPermissionMismatch\nContent: <?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>AuthorizationPermissionMismatch<\/Code><Message>This request is not authorized to perform this operation using this permission.\nRequestId:a567b991-d01e-0074-6ccc-f7d7a2000000\nTime:2026-06-09T04:55:57.1045175Z<\/Message><\/Error>",
+[2026-06-09T04:55:59.411Z]     "Timestamp":"2026-06-09 04:55:57"
+[2026-06-09T04:55:59.411Z]   }
+[2026-06-09T04:55:59.411Z] ]
+[2026-06-09T04:55:59.945Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:55:59.945Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:55:59.946Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots?restype=REDACTED'
+[2026-06-09T04:55:59.946Z] Request method: 'GET'
+[2026-06-09T04:55:59.946Z] Request headers:
+[2026-06-09T04:55:59.946Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:55:59.946Z]     'Accept': 'application/xml'
+[2026-06-09T04:55:59.946Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:55:59.946Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:55:59.946Z]     'x-ms-client-request-id': 'be459836-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:55:59.946Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:55:59.946Z] No body was attached to the request
+[2026-06-09T04:56:00.121Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:00.122Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:00.122Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots?restype=REDACTED'
+[2026-06-09T04:56:00.122Z] Request method: 'GET'
+[2026-06-09T04:56:00.122Z] Request headers:
+[2026-06-09T04:56:00.122Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.122Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.122Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.122Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.122Z]     'x-ms-client-request-id': 'be580fe8-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.122Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.122Z] No body was attached to the request
+[2026-06-09T04:56:00.211Z] Response status: 200
+[2026-06-09T04:56:00.211Z] Response headers:
+[2026-06-09T04:56:00.211Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.211Z]     'Last-Modified': 'Mon, 08 Jun 2026 13:03:22 GMT'
+[2026-06-09T04:56:00.211Z]     'ETag': '"0x8DEC55E51D7F432"'
+[2026-06-09T04:56:00.211Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.211Z]     'x-ms-request-id': 'e506ea36-a01e-0018-1bcc-f70e64000000'
+[2026-06-09T04:56:00.211Z]     'x-ms-client-request-id': 'be459836-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.211Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-lease-status': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-lease-state': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-has-immutability-policy': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-has-legal-hold': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-immutable-storage-with-versioning-enabled': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-default-encryption-scope': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-deny-encryption-scope-override': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'Date': 'Tue, 09 Jun 2026 04:55:59 GMT'
+[2026-06-09T04:56:00.211Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/blobs_snapshot_20260609T045228_f6cebb4c_batch0.json'
+[2026-06-09T04:56:00.211Z] Request method: 'PUT'
+[2026-06-09T04:56:00.211Z] Request headers:
+[2026-06-09T04:56:00.211Z]     'Content-Length': '11471'
+[2026-06-09T04:56:00.211Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.211Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.211Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.211Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.211Z]     'x-ms-client-request-id': 'be459837-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.211Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.211Z] A body is sent with the request
+[2026-06-09T04:56:00.327Z] Response status: 201
+[2026-06-09T04:56:00.327Z] Response headers:
+[2026-06-09T04:56:00.327Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.327Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.327Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.327Z]     'ETag': '"0x8DEC5E3669B9624"'
+[2026-06-09T04:56:00.327Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.327Z]     'x-ms-request-id': 'e506eabf-a01e-0018-7bcc-f70e64000000'
+[2026-06-09T04:56:00.327Z]     'x-ms-client-request-id': 'be459837-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.327Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.327Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.327Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.327Z]     'Date': 'Tue, 09 Jun 2026 04:55:59 GMT'
+[2026-06-09T04:56:00.327Z] Uploaded JSON Snapshot: 2026/06/09/blobs_snapshot_20260609T045228_f6cebb4c_batch0.json (21 records)
+[2026-06-09T04:56:00.327Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/shares_snapshot_20260609T045228_f6cebb4c_batch0.json'
+[2026-06-09T04:56:00.327Z] Request method: 'PUT'
+[2026-06-09T04:56:00.327Z] Request headers:
+[2026-06-09T04:56:00.328Z]     'Content-Length': '2'
+[2026-06-09T04:56:00.328Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.328Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.328Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.328Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.328Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.328Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.328Z]     'x-ms-client-request-id': 'be459838-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.328Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.328Z] A body is sent with the request
+[2026-06-09T04:56:00.382Z] Response status: 200
+[2026-06-09T04:56:00.383Z] Response headers:
+[2026-06-09T04:56:00.383Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.383Z]     'Last-Modified': 'Mon, 08 Jun 2026 13:03:22 GMT'
+[2026-06-09T04:56:00.383Z]     'ETag': '"0x8DEC55E51D7F432"'
+[2026-06-09T04:56:00.383Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.383Z]     'x-ms-request-id': '0e2143dc-201e-0074-1fcc-f7e5f3000000'
+[2026-06-09T04:56:00.383Z]     'x-ms-client-request-id': 'be580fe8-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.383Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-lease-status': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-lease-state': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-has-immutability-policy': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-has-legal-hold': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-immutable-storage-with-versioning-enabled': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-default-encryption-scope': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-deny-encryption-scope-override': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.383Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/blobs_snapshot_20260609T045301_01a29655_batch0.json'
+[2026-06-09T04:56:00.383Z] Request method: 'PUT'
+[2026-06-09T04:56:00.383Z] Request headers:
+[2026-06-09T04:56:00.383Z]     'Content-Length': '11471'
+[2026-06-09T04:56:00.383Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.383Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.383Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.383Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.383Z]     'x-ms-client-request-id': 'be580fe9-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.383Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.383Z] A body is sent with the request
+[2026-06-09T04:56:00.392Z] Response status: 201
+[2026-06-09T04:56:00.392Z] Response headers:
+[2026-06-09T04:56:00.392Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.392Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.392Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.392Z]     'ETag': '"0x8DEC5E366A57FB2"'
+[2026-06-09T04:56:00.392Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.392Z]     'x-ms-request-id': 'e506eb7b-a01e-0018-1ccc-f70e64000000'
+[2026-06-09T04:56:00.392Z]     'x-ms-client-request-id': 'be459838-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.393Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.393Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.393Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.393Z]     'Date': 'Tue, 09 Jun 2026 04:55:59 GMT'
+[2026-06-09T04:56:00.393Z] Uploaded JSON Snapshot: 2026/06/09/shares_snapshot_20260609T045228_f6cebb4c_batch0.json (0 records)
+[2026-06-09T04:56:00.393Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/scan_errors_20260609T045228_f6cebb4c_batch0.json'
+[2026-06-09T04:56:00.393Z] Request method: 'PUT'
+[2026-06-09T04:56:00.393Z] Request headers:
+[2026-06-09T04:56:00.393Z]     'Content-Length': '1452'
+[2026-06-09T04:56:00.393Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.393Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.393Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.393Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.393Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.393Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.393Z]     'x-ms-client-request-id': 'be459839-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.393Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.393Z] A body is sent with the request
+[2026-06-09T04:56:00.457Z] Response status: 201
+[2026-06-09T04:56:00.457Z] Response headers:
+[2026-06-09T04:56:00.457Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.457Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.457Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.457Z]     'ETag': '"0x8DEC5E366AF904D"'
+[2026-06-09T04:56:00.457Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.457Z]     'x-ms-request-id': 'e506ebd0-a01e-0018-67cc-f70e64000000'
+[2026-06-09T04:56:00.457Z]     'x-ms-client-request-id': 'be459839-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.457Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.457Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.457Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.457Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.458Z] Uploaded JSON Snapshot: 2026/06/09/scan_errors_20260609T045228_f6cebb4c_batch0.json (2 records)
+[2026-06-09T04:56:00.504Z] Response status: 201
+[2026-06-09T04:56:00.505Z] Response headers:
+[2026-06-09T04:56:00.505Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.505Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.505Z]     'ETag': '"0x8DEC5E366B66D14"'
+[2026-06-09T04:56:00.505Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.505Z]     'x-ms-request-id': '0e214466-201e-0074-1acc-f7e5f3000000'
+[2026-06-09T04:56:00.505Z]     'x-ms-client-request-id': 'be580fe9-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.505Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.505Z] Uploaded JSON Snapshot: 2026/06/09/blobs_snapshot_20260609T045301_01a29655_batch0.json (21 records)
+[2026-06-09T04:56:00.505Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/shares_snapshot_20260609T045301_01a29655_batch0.json'
+[2026-06-09T04:56:00.505Z] Request method: 'PUT'
+[2026-06-09T04:56:00.505Z] Request headers:
+[2026-06-09T04:56:00.505Z]     'Content-Length': '2'
+[2026-06-09T04:56:00.505Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.505Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.505Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.505Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.505Z]     'x-ms-client-request-id': 'be580fea-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.505Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.505Z] A body is sent with the request
+[2026-06-09T04:56:00.555Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/utilization_stats_20260609T045228_f6cebb4c_batch0.xlsx'
+[2026-06-09T04:56:00.555Z] Request method: 'PUT'
+[2026-06-09T04:56:00.555Z] Request headers:
+[2026-06-09T04:56:00.555Z]     'Content-Length': '4931'
+[2026-06-09T04:56:00.555Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.555Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.555Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.555Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.555Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.555Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.555Z]     'x-ms-client-request-id': 'be45983a-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.555Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.555Z] A body is sent with the request
+[2026-06-09T04:56:00.573Z] Response status: 201
+[2026-06-09T04:56:00.574Z] Response headers:
+[2026-06-09T04:56:00.574Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.574Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.574Z]     'ETag': '"0x8DEC5E366C0F2C9"'
+[2026-06-09T04:56:00.574Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.574Z]     'x-ms-request-id': '0e214521-201e-0074-44cc-f7e5f3000000'
+[2026-06-09T04:56:00.574Z]     'x-ms-client-request-id': 'be580fea-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.574Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.574Z] Uploaded JSON Snapshot: 2026/06/09/shares_snapshot_20260609T045301_01a29655_batch0.json (0 records)
+[2026-06-09T04:56:00.574Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/scan_errors_20260609T045301_01a29655_batch0.json'
+[2026-06-09T04:56:00.574Z] Request method: 'PUT'
+[2026-06-09T04:56:00.574Z] Request headers:
+[2026-06-09T04:56:00.574Z]     'Content-Length': '1452'
+[2026-06-09T04:56:00.574Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.574Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.574Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.574Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.574Z]     'x-ms-client-request-id': 'be580feb-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.574Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.574Z] A body is sent with the request
+[2026-06-09T04:56:00.622Z] Response status: 201
+[2026-06-09T04:56:00.622Z] Response headers:
+[2026-06-09T04:56:00.622Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.622Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.622Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.622Z]     'ETag': '"0x8DEC5E366C844B8"'
+[2026-06-09T04:56:00.622Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.622Z]     'x-ms-request-id': 'e506ec9a-a01e-0018-15cc-f70e64000000'
+[2026-06-09T04:56:00.622Z]     'x-ms-client-request-id': 'be45983a-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.622Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.622Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.622Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.623Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.623Z] Uploaded Excel Report: 2026/06/09/utilization_stats_20260609T045228_f6cebb4c_batch0.xlsx (1 records)
+[2026-06-09T04:56:00.629Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/blobs_report_20260609T045228_f6cebb4c_batch0.xlsx'
+[2026-06-09T04:56:00.629Z] Request method: 'PUT'
+[2026-06-09T04:56:00.629Z] Request headers:
+[2026-06-09T04:56:00.629Z]     'Content-Length': '7298'
+[2026-06-09T04:56:00.629Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.629Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.629Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.629Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.629Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.629Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.629Z]     'x-ms-client-request-id': 'be45983b-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.629Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.629Z] A body is sent with the request
+[2026-06-09T04:56:00.642Z] Response status: 201
+[2026-06-09T04:56:00.642Z] Response headers:
+[2026-06-09T04:56:00.642Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.642Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.642Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.642Z]     'ETag': '"0x8DEC5E366CB5184"'
+[2026-06-09T04:56:00.642Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.642Z]     'x-ms-request-id': '0e214590-201e-0074-29cc-f7e5f3000000'
+[2026-06-09T04:56:00.642Z]     'x-ms-client-request-id': 'be580feb-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.642Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.642Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.642Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.642Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.643Z] Uploaded JSON Snapshot: 2026/06/09/scan_errors_20260609T045301_01a29655_batch0.json (2 records)
+[2026-06-09T04:56:00.646Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/utilization_stats_20260609T045301_01a29655_batch0.xlsx'
+[2026-06-09T04:56:00.646Z] Request method: 'PUT'
+[2026-06-09T04:56:00.646Z] Request headers:
+[2026-06-09T04:56:00.646Z]     'Content-Length': '4931'
+[2026-06-09T04:56:00.646Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.646Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.646Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.646Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.646Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.646Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.646Z]     'x-ms-client-request-id': 'be580fec-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.646Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.646Z] A body is sent with the request
+[2026-06-09T04:56:00.696Z] Response status: 201
+[2026-06-09T04:56:00.696Z] Response headers:
+[2026-06-09T04:56:00.696Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.696Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.696Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.696Z]     'ETag': '"0x8DEC5E366D3B4A4"'
+[2026-06-09T04:56:00.696Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.696Z]     'x-ms-request-id': 'e506ecfa-a01e-0018-67cc-f70e64000000'
+[2026-06-09T04:56:00.696Z]     'x-ms-client-request-id': 'be45983b-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.696Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.696Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.696Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.696Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.696Z] Uploaded Excel Report: 2026/06/09/blobs_report_20260609T045228_f6cebb4c_batch0.xlsx (21 records)
+[2026-06-09T04:56:00.697Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/scan_manifest_20260609T045228_f6cebb4c_batch0.json'
+[2026-06-09T04:56:00.697Z] Request method: 'PUT'
+[2026-06-09T04:56:00.697Z] Request headers:
+[2026-06-09T04:56:00.697Z]     'Content-Length': '895'
+[2026-06-09T04:56:00.697Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.697Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.697Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.697Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.697Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.697Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.697Z]     'x-ms-client-request-id': 'be45983c-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.697Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.697Z] A body is sent with the request
+[2026-06-09T04:56:00.716Z] Response status: 201
+[2026-06-09T04:56:00.716Z] Response headers:
+[2026-06-09T04:56:00.716Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.716Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.716Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.716Z]     'ETag': '"0x8DEC5E366D67364"'
+[2026-06-09T04:56:00.716Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.716Z]     'x-ms-request-id': '0e21460e-201e-0074-1bcc-f7e5f3000000'
+[2026-06-09T04:56:00.716Z]     'x-ms-client-request-id': 'be580fec-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.716Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.716Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.716Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.716Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.717Z] Uploaded Excel Report: 2026/06/09/utilization_stats_20260609T045301_01a29655_batch0.xlsx (1 records)
+[2026-06-09T04:56:00.722Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/blobs_report_20260609T045301_01a29655_batch0.xlsx'
+[2026-06-09T04:56:00.722Z] Request method: 'PUT'
+[2026-06-09T04:56:00.722Z] Request headers:
+[2026-06-09T04:56:00.722Z]     'Content-Length': '7298'
+[2026-06-09T04:56:00.722Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.722Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.722Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.722Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.722Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.722Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.722Z]     'x-ms-client-request-id': 'be580fed-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.722Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.722Z] A body is sent with the request
+[2026-06-09T04:56:00.763Z] Response status: 201
+[2026-06-09T04:56:00.763Z] Response headers:
+[2026-06-09T04:56:00.763Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.763Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.764Z]     'ETag': '"0x8DEC5E366DDC548"'
+[2026-06-09T04:56:00.764Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.764Z]     'x-ms-request-id': 'e506ed5b-a01e-0018-3acc-f70e64000000'
+[2026-06-09T04:56:00.764Z]     'x-ms-client-request-id': 'be45983c-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.764Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.764Z] Uploaded Scan Manifest: 2026/06/09/scan_manifest_20260609T045228_f6cebb4c_batch0.json
+[2026-06-09T04:56:00.764Z] Worker successfully pushed all partitioned data to Warehouse (stinvhost9922/inventory-snapshots). Manifest: {
+[2026-06-09T04:56:00.764Z]   "run_id": "20260609T045228_f6cebb4c",
+[2026-06-09T04:56:00.764Z]   "batch_index": 0,
+[2026-06-09T04:56:00.764Z]   "total_batches": 1,
+[2026-06-09T04:56:00.764Z]   "total_accounts_in_run": 4,
+[2026-06-09T04:56:00.764Z]   "accounts_in_batch": 4,
+[2026-06-09T04:56:00.764Z]   "accounts_succeeded": 2,
+[2026-06-09T04:56:00.764Z]   "accounts_failed": 2,
+[2026-06-09T04:56:00.764Z]   "accounts_succeeded_list": [
+[2026-06-09T04:56:00.764Z]     "inventoryprojtest8b93",
+[2026-06-09T04:56:00.764Z]     "stinvhost9922"
+[2026-06-09T04:56:00.764Z]   ],
+[2026-06-09T04:56:00.764Z]   "accounts_failed_list": [
+[2026-06-09T04:56:00.764Z]     "inventoryprojecttest",
+[2026-06-09T04:56:00.764Z]     "inventorytestregion"
+[2026-06-09T04:56:00.764Z]   ],
+[2026-06-09T04:56:00.764Z]   "total_blobs_extracted": 21,
+[2026-06-09T04:56:00.764Z]   "total_shares_extracted": 0,
+[2026-06-09T04:56:00.764Z]   "total_size_bytes": 122241,
+[2026-06-09T04:56:00.764Z]   "incremental_watermark": "2026-05-10T04:55:50.765601+00:00",
+[2026-06-09T04:56:00.764Z]   "scan_start_time": "2026-06-09T04:55:48.840252+00:00",
+[2026-06-09T04:56:00.764Z]   "scan_end_time": "2026-06-09T04:56:00.693838+00:00",
+[2026-06-09T04:56:00.764Z]   "scan_duration_seconds": 11.85,
+[2026-06-09T04:56:00.764Z]   "excluded_container_prefixes": [
+[2026-06-09T04:56:00.764Z]     "azure-webjobs-",
+[2026-06-09T04:56:00.764Z]     "app-package-",
+[2026-06-09T04:56:00.764Z]     "scm-releases",
+[2026-06-09T04:56:00.764Z]     "$logs",
+[2026-06-09T04:56:00.764Z]     "$blobchangefeed",
+[2026-06-09T04:56:00.764Z]     "$web",
+[2026-06-09T04:56:00.764Z]     "$root"
+[2026-06-09T04:56:00.764Z]   ],
+[2026-06-09T04:56:00.764Z]   "warehouse_path": "stinvhost9922/inventory-snapshots/2026/06/09/"
+[2026-06-09T04:56:00.764Z] }
+[2026-06-09T04:56:00.764Z] Request URL: 'https://stinvhost9922.table.core.windows.net/Tables'
+[2026-06-09T04:56:00.764Z] Request method: 'POST'
+[2026-06-09T04:56:00.764Z] Request headers:
+[2026-06-09T04:56:00.764Z]     'Content-Type': 'application/json;odata=nometadata'
+[2026-06-09T04:56:00.764Z]     'Content-Length': '36'
+[2026-06-09T04:56:00.764Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'Accept': 'application/json;odata=minimalmetadata'
+[2026-06-09T04:56:00.764Z]     'x-ms-client-request-id': 'be45983d-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.764Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.764Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.764Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.764Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.764Z] A body is sent with the request
+[2026-06-09T04:56:00.790Z] Response status: 201
+[2026-06-09T04:56:00.790Z] Response headers:
+[2026-06-09T04:56:00.790Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.790Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.790Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.790Z]     'ETag': '"0x8DEC5E366E20A62"'
+[2026-06-09T04:56:00.790Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.790Z]     'x-ms-request-id': '0e21467e-201e-0074-01cc-f7e5f3000000'
+[2026-06-09T04:56:00.790Z]     'x-ms-client-request-id': 'be580fed-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.790Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.790Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.790Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.790Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.791Z] Uploaded Excel Report: 2026/06/09/blobs_report_20260609T045301_01a29655_batch0.xlsx (21 records)
+[2026-06-09T04:56:00.791Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/scan_manifest_20260609T045301_01a29655_batch0.json'
+[2026-06-09T04:56:00.791Z] Request method: 'PUT'
+[2026-06-09T04:56:00.791Z] Request headers:
+[2026-06-09T04:56:00.791Z]     'Content-Length': '895'
+[2026-06-09T04:56:00.791Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:00.791Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.791Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:00.791Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:00.791Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.791Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.791Z]     'x-ms-client-request-id': 'be580fee-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.791Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.791Z] A body is sent with the request
+[2026-06-09T04:56:00.841Z] Response status: 201
+[2026-06-09T04:56:00.841Z] Response headers:
+[2026-06-09T04:56:00.841Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:00.841Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:00.841Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:00.841Z]     'Location': 'REDACTED'
+[2026-06-09T04:56:00.841Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.841Z]     'x-ms-request-id': '57603211-a002-006a-19cc-f7092b000000'
+[2026-06-09T04:56:00.841Z]     'x-ms-client-request-id': 'be45983d-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.841Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.841Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:00.841Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.842Z] Request URL: 'https://stinvhost9922.table.core.windows.net/InventoryWatermarks(PartitionKey='scanner',RowKey='last_sync_date')'
+[2026-06-09T04:56:00.842Z] Request method: 'PATCH'
+[2026-06-09T04:56:00.842Z] Request headers:
+[2026-06-09T04:56:00.842Z]     'Content-Type': 'application/json'
+[2026-06-09T04:56:00.842Z]     'Content-Length': '224'
+[2026-06-09T04:56:00.842Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.842Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:00.842Z]     'Accept': 'application/json'
+[2026-06-09T04:56:00.842Z]     'x-ms-client-request-id': 'be45983e-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.842Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.842Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.842Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.842Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.842Z] A body is sent with the request
+[2026-06-09T04:56:00.858Z] Response status: 201
+[2026-06-09T04:56:00.858Z] Response headers:
+[2026-06-09T04:56:00.858Z]     'Content-Length': '0'
+[2026-06-09T04:56:00.858Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.858Z]     'ETag': '"0x8DEC5E366EC6914"'
+[2026-06-09T04:56:00.858Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.858Z]     'x-ms-request-id': '0e2146f9-201e-0074-6ccc-f7e5f3000000'
+[2026-06-09T04:56:00.858Z]     'x-ms-client-request-id': 'be580fee-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.858Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.858Z] Uploaded Scan Manifest: 2026/06/09/scan_manifest_20260609T045301_01a29655_batch0.json
+[2026-06-09T04:56:00.858Z] Worker successfully pushed all partitioned data to Warehouse (stinvhost9922/inventory-snapshots). Manifest: {
+[2026-06-09T04:56:00.858Z]   "run_id": "20260609T045301_01a29655",
+[2026-06-09T04:56:00.858Z]   "batch_index": 0,
+[2026-06-09T04:56:00.858Z]   "total_batches": 1,
+[2026-06-09T04:56:00.858Z]   "total_accounts_in_run": 4,
+[2026-06-09T04:56:00.858Z]   "accounts_in_batch": 4,
+[2026-06-09T04:56:00.858Z]   "accounts_succeeded": 2,
+[2026-06-09T04:56:00.858Z]   "accounts_failed": 2,
+[2026-06-09T04:56:00.858Z]   "accounts_succeeded_list": [
+[2026-06-09T04:56:00.858Z]     "inventoryprojtest8b93",
+[2026-06-09T04:56:00.858Z]     "stinvhost9922"
+[2026-06-09T04:56:00.858Z]   ],
+[2026-06-09T04:56:00.858Z]   "accounts_failed_list": [
+[2026-06-09T04:56:00.858Z]     "inventoryprojecttest",
+[2026-06-09T04:56:00.858Z]     "inventorytestregion"
+[2026-06-09T04:56:00.858Z]   ],
+[2026-06-09T04:56:00.858Z]   "total_blobs_extracted": 21,
+[2026-06-09T04:56:00.858Z]   "total_shares_extracted": 0,
+[2026-06-09T04:56:00.858Z]   "total_size_bytes": 122241,
+[2026-06-09T04:56:00.858Z]   "incremental_watermark": "2026-05-10T04:55:50.713893+00:00",
+[2026-06-09T04:56:00.858Z]   "scan_start_time": "2026-06-09T04:55:48.837259+00:00",
+[2026-06-09T04:56:00.858Z]   "scan_end_time": "2026-06-09T04:56:00.788296+00:00",
+[2026-06-09T04:56:00.858Z]   "scan_duration_seconds": 11.95,
+[2026-06-09T04:56:00.858Z]   "excluded_container_prefixes": [
+[2026-06-09T04:56:00.858Z]     "azure-webjobs-",
+[2026-06-09T04:56:00.858Z]     "app-package-",
+[2026-06-09T04:56:00.858Z]     "scm-releases",
+[2026-06-09T04:56:00.858Z]     "$logs",
+[2026-06-09T04:56:00.858Z]     "$blobchangefeed",
+[2026-06-09T04:56:00.858Z]     "$web",
+[2026-06-09T04:56:00.858Z]     "$root"
+[2026-06-09T04:56:00.858Z]   ],
+[2026-06-09T04:56:00.858Z]   "warehouse_path": "stinvhost9922/inventory-snapshots/2026/06/09/"
+[2026-06-09T04:56:00.858Z] }
+[2026-06-09T04:56:00.858Z] Request URL: 'https://stinvhost9922.table.core.windows.net/Tables'
+[2026-06-09T04:56:00.858Z] Request method: 'POST'
+[2026-06-09T04:56:00.858Z] Request headers:
+[2026-06-09T04:56:00.858Z]     'Content-Type': 'application/json;odata=nometadata'
+[2026-06-09T04:56:00.858Z]     'Content-Length': '36'
+[2026-06-09T04:56:00.858Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'Accept': 'application/json;odata=minimalmetadata'
+[2026-06-09T04:56:00.858Z]     'x-ms-client-request-id': 'be580fef-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.858Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.858Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.858Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.859Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.859Z] A body is sent with the request
+[2026-06-09T04:56:00.905Z] Response status: 403
+[2026-06-09T04:56:00.905Z] Response headers:
+[2026-06-09T04:56:00.905Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:00.905Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:00.905Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:00.905Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.905Z]     'x-ms-request-id': '57603219-a002-006a-20cc-f7092b000000'
+[2026-06-09T04:56:00.905Z]     'x-ms-client-request-id': 'be45983e-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.905Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.905Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:00.905Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.905Z] Failed to update watermark: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:00.906Z] RequestId:57603219-a002-006a-20cc-f7092b000000
+[2026-06-09T04:56:00.906Z] Time:2026-06-09T04:56:00.8771726Z
+[2026-06-09T04:56:00.906Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:56:00.906Z] Content: {"odata.error":{"code":"AuthorizationPermissionMismatch","message":{"lang":"en-US","value":"This request is not authorized to perform this operation using this permission.\nRequestId:57603219-a002-006a-20cc-f7092b000000\nTime:2026-06-09T04:56:00.8771726Z"}}}
+[2026-06-09T04:56:00.907Z] Executed 'Functions.storage_inventory_worker' (Succeeded, Id=72df6697-4f15-4d39-aaf8-12ffcd92c3e4, Duration=12125ms)
+[2026-06-09T04:56:00.924Z] Response status: 409
+[2026-06-09T04:56:00.924Z] Response headers:
+[2026-06-09T04:56:00.924Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:00.924Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:00.924Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:00.924Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.924Z]     'x-ms-request-id': '1af41036-7002-001b-3bcc-f7ef00000000'
+[2026-06-09T04:56:00.924Z]     'x-ms-client-request-id': 'be580fef-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.924Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.924Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:00.924Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.924Z] Request URL: 'https://stinvhost9922.table.core.windows.net/InventoryWatermarks(PartitionKey='scanner',RowKey='last_sync_date')'
+[2026-06-09T04:56:00.924Z] Request method: 'PATCH'
+[2026-06-09T04:56:00.924Z] Request headers:
+[2026-06-09T04:56:00.924Z]     'Content-Type': 'application/json'
+[2026-06-09T04:56:00.924Z]     'Content-Length': '224'
+[2026-06-09T04:56:00.924Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.924Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:00.924Z]     'Accept': 'application/json'
+[2026-06-09T04:56:00.924Z]     'x-ms-client-request-id': 'be580ff0-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.924Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:00.924Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.924Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:00.924Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:00.924Z] A body is sent with the request
+[2026-06-09T04:56:00.987Z] Response status: 403
+[2026-06-09T04:56:00.987Z] Response headers:
+[2026-06-09T04:56:00.987Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:00.987Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:00.987Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:00.987Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:00.987Z]     'x-ms-request-id': '1af41040-7002-001b-43cc-f7ef00000000'
+[2026-06-09T04:56:00.987Z]     'x-ms-client-request-id': 'be580ff0-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:00.988Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:00.988Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:00.988Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:00.988Z] Failed to update watermark: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:00.988Z] RequestId:1af41040-7002-001b-43cc-f7ef00000000
+[2026-06-09T04:56:00.988Z] Time:2026-06-09T04:56:00.9524982Z
+[2026-06-09T04:56:00.988Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:56:00.988Z] Content: {"odata.error":{"code":"AuthorizationPermissionMismatch","message":{"lang":"en-US","value":"This request is not authorized to perform this operation using this permission.\nRequestId:1af41040-7002-001b-43cc-f7ef00000000\nTime:2026-06-09T04:56:00.9524982Z"}}}
+[2026-06-09T04:56:00.988Z] Executed 'Functions.storage_inventory_worker' (Succeeded, Id=739b54be-6b64-4b6e-bf6f-b0813eaa595d, Duration=12266ms)
+[2026-06-09T04:56:01.817Z] Executing 'Functions.storage_inventory_worker' (Reason='New queue message detected on 'inventory-tasks'.', Id=7a135e45-87f5-407f-84e0-c89986bf114c)
+[2026-06-09T04:56:01.817Z] Trigger Details: MessageId: e406e5b0-9d85-4fdd-9f3c-8e5ec432f982, DequeueCount: 1, InsertedOn: 2026-06-09T04:55:57.000+00:00
+[2026-06-09T04:56:01.824Z] Worker Instance Started. Processing a batch of storage accounts...
+[2026-06-09T04:56:01.824Z] No environment configuration found.
+[2026-06-09T04:56:01.825Z] ManagedIdentityCredential will use IMDS
+[2026-06-09T04:56:01.826Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:56:01.826Z] Request method: 'GET'
+[2026-06-09T04:56:01.826Z] Request headers:
+[2026-06-09T04:56:01.826Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:01.826Z] No body was attached to the request
+[2026-06-09T04:56:01.828Z] Response status: 401
+[2026-06-09T04:56:01.828Z] Response headers:
+[2026-06-09T04:56:01.828Z]     'Content-Length': '0'
+[2026-06-09T04:56:01.828Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:01.828Z]     'Server': 'EC2ws'
+[2026-06-09T04:56:01.828Z]     'Connection': 'close'
+[2026-06-09T04:56:01.828Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:56:01.830Z] Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+[2026-06-09T04:56:01.830Z] Request method: 'GET'
+[2026-06-09T04:56:01.830Z] Request headers:
+[2026-06-09T04:56:01.830Z]     'Metadata': 'REDACTED'
+[2026-06-09T04:56:01.830Z]     'x-client-SKU': 'REDACTED'
+[2026-06-09T04:56:01.830Z]     'x-client-Ver': 'REDACTED'
+[2026-06-09T04:56:01.830Z]     'x-ms-client-request-id': 'b0323fec-b984-4cac-b463-c3dcf10e2a9c'
+[2026-06-09T04:56:01.830Z]     'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:01.830Z] No body was attached to the request
+[2026-06-09T04:56:01.832Z] Response status: 401
+[2026-06-09T04:56:01.833Z] Response headers:
+[2026-06-09T04:56:01.833Z]     'Content-Length': '0'
+[2026-06-09T04:56:01.833Z]     'Date': 'Tue, 09 Jun 2026 04:56:00 GMT'
+[2026-06-09T04:56:01.833Z]     'Server': 'EC2ws'
+[2026-06-09T04:56:01.833Z]     'Connection': 'close'
+[2026-06-09T04:56:01.833Z]     'Content-Type': 'text/plain'
+[2026-06-09T04:56:02.315Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:02.315Z] Request URL: 'https://stinvhost9922.table.core.windows.net/InventoryWatermarks(PartitionKey='scanner',RowKey='last_sync_date')'
+[2026-06-09T04:56:02.315Z] Request method: 'GET'
+[2026-06-09T04:56:02.315Z] Request headers:
+[2026-06-09T04:56:02.315Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:02.315Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:02.316Z]     'Accept': 'application/json;odata=minimalmetadata'
+[2026-06-09T04:56:02.316Z]     'x-ms-client-request-id': 'bfc8460e-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:02.316Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:02.316Z]     'Date': 'Tue, 09 Jun 2026 04:56:01 GMT'
+[2026-06-09T04:56:02.316Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:02.316Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:02.316Z] No body was attached to the request
+[2026-06-09T04:56:02.567Z] Response status: 403
+[2026-06-09T04:56:02.567Z] Response headers:
+[2026-06-09T04:56:02.567Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:02.567Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:02.567Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:02.567Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:02.567Z]     'x-ms-request-id': '98fad59b-b002-002b-77cc-f751cf000000'
+[2026-06-09T04:56:02.567Z]     'x-ms-client-request-id': 'bfc8460e-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:02.568Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:02.568Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:02.568Z]     'Date': 'Tue, 09 Jun 2026 04:56:01 GMT'
+[2026-06-09T04:56:02.568Z] Failed to fetch watermark from Table Storage: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:02.568Z] RequestId:98fad59b-b002-002b-77cc-f751cf000000
+[2026-06-09T04:56:02.568Z] Time:2026-06-09T04:56:02.5323366Z
+[2026-06-09T04:56:02.568Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:56:02.568Z] Content: {"odata.error":{"code":"AuthorizationPermissionMismatch","message":{"lang":"en-US","value":"This request is not authorized to perform this operation using this permission.\nRequestId:98fad59b-b002-002b-77cc-f751cf000000\nTime:2026-06-09T04:56:02.5323366Z"}}}
+[2026-06-09T04:56:02.570Z] Incremental Scan Mode: Only scanning blobs modified AFTER 2026-05-10 04:56:02.566044+00:00
+[2026-06-09T04:56:02.570Z] Scanning Storage Account: inventoryprojecttest
+[2026-06-09T04:56:03.008Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:03.008Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:03.008Z] Request URL: 'https://inventoryprojecttest.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:03.008Z] Request method: 'GET'
+[2026-06-09T04:56:03.008Z] Request headers:
+[2026-06-09T04:56:03.008Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:03.008Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:03.008Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:03.008Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:03.009Z]     'x-ms-client-request-id': 'bfc8460f-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:03.009Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:03.009Z] No body was attached to the request
+[2026-06-09T04:56:03.143Z] Response status: 200
+[2026-06-09T04:56:03.143Z] Response headers:
+[2026-06-09T04:56:03.143Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:03.143Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:03.143Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:03.143Z]     'x-ms-request-id': '4e21537b-401e-004d-4dcc-f73dd4000000'
+[2026-06-09T04:56:03.143Z]     'x-ms-client-request-id': 'bfc8460f-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:03.143Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:03.143Z]     'Date': 'Tue, 09 Jun 2026 04:56:02 GMT'
+[2026-06-09T04:56:03.143Z] Request URL: 'https://inventoryprojecttest.blob.core.windows.net/containertest?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:03.143Z] Request method: 'GET'
+[2026-06-09T04:56:03.143Z] Request headers:
+[2026-06-09T04:56:03.143Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:03.143Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:03.143Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:03.143Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:03.143Z]     'x-ms-client-request-id': 'c09176fa-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:03.143Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:03.143Z] No body was attached to the request
+[2026-06-09T04:56:03.175Z] Response status: 403
+[2026-06-09T04:56:03.175Z] Response headers:
+[2026-06-09T04:56:03.175Z]     'Content-Length': '279'
+[2026-06-09T04:56:03.175Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:03.176Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:03.176Z]     'x-ms-request-id': '4e215395-401e-004d-62cc-f73dd4000000'
+[2026-06-09T04:56:03.176Z]     'x-ms-client-request-id': 'c09176fa-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:03.176Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:03.176Z]     'x-ms-error-code': 'AuthorizationPermissionMismatch'
+[2026-06-09T04:56:03.176Z]     'Date': 'Tue, 09 Jun 2026 04:56:02 GMT'
+[2026-06-09T04:56:03.176Z] Failed to scan account inventoryprojecttest: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:03.176Z] RequestId:4e215395-401e-004d-62cc-f73dd4000000
+[2026-06-09T04:56:03.176Z] Time:2026-06-09T04:56:03.1574858Z
+[2026-06-09T04:56:03.176Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:56:03.176Z] Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:03.176Z] RequestId:4e215395-401e-004d-62cc-f73dd4000000
+[2026-06-09T04:56:03.176Z] Time:2026-06-09T04:56:03.1574858Z</Message></Error>
+[2026-06-09T04:56:03.176Z] Scanning Storage Account: inventoryprojtest8b93
+[2026-06-09T04:56:03.580Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:03.581Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:03.581Z] Request URL: 'https://inventoryprojtest8b93.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:03.581Z] Request method: 'GET'
+[2026-06-09T04:56:03.581Z] Request headers:
+[2026-06-09T04:56:03.581Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:03.581Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:03.581Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:03.581Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:03.581Z]     'x-ms-client-request-id': 'c09176fb-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:03.581Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:03.581Z] No body was attached to the request
+[2026-06-09T04:56:03.710Z] Response status: 200
+[2026-06-09T04:56:03.710Z] Response headers:
+[2026-06-09T04:56:03.710Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:03.710Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:03.710Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:03.710Z]     'x-ms-request-id': 'a87374b0-c01e-0031-19cc-f7132b000000'
+[2026-06-09T04:56:03.710Z]     'x-ms-client-request-id': 'c09176fb-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:03.710Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:03.710Z]     'Date': 'Tue, 09 Jun 2026 04:56:03 GMT'
+[2026-06-09T04:56:03.711Z]   Skipping infrastructure container: app-package-testinventoryproj-e4b4a42
+[2026-06-09T04:56:03.711Z]   Skipping infrastructure container: azure-webjobs-hosts
+[2026-06-09T04:56:03.711Z]   Skipping infrastructure container: azure-webjobs-secrets
+[2026-06-09T04:56:04.106Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:04.107Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:04.107Z] Request URL: 'https://inventoryprojtest8b93.file.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:04.107Z] Request method: 'GET'
+[2026-06-09T04:56:04.107Z] Request headers:
+[2026-06-09T04:56:04.107Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:04.107Z]     'x-ms-file-request-intent': 'REDACTED'
+[2026-06-09T04:56:04.107Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:04.107Z]     'User-Agent': 'azsdk-python-storage-file-share/12.25.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:04.107Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:04.107Z]     'x-ms-client-request-id': 'c09176fc-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:04.107Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:04.107Z] No body was attached to the request
+[2026-06-09T04:56:04.242Z] Response status: 200
+[2026-06-09T04:56:04.242Z] Response headers:
+[2026-06-09T04:56:04.242Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:04.242Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:04.242Z]     'Server': 'Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:04.242Z]     'x-ms-request-id': '9f66c431-101a-0032-27cc-f7f24f000000'
+[2026-06-09T04:56:04.242Z]     'x-ms-client-request-id': 'c09176fc-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:04.242Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:04.242Z]     'Date': 'Tue, 09 Jun 2026 04:56:03 GMT'
+[2026-06-09T04:56:04.243Z] Scanning Storage Account: inventorytestregion
+[2026-06-09T04:56:04.642Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:04.643Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:04.643Z] Request URL: 'https://inventorytestregion.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:04.643Z] Request method: 'GET'
+[2026-06-09T04:56:04.643Z] Request headers:
+[2026-06-09T04:56:04.643Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:04.643Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:04.643Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:04.643Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:04.643Z]     'x-ms-client-request-id': 'c09176fd-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:04.643Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:04.643Z] No body was attached to the request
+[2026-06-09T04:56:04.908Z] Response status: 200
+[2026-06-09T04:56:04.908Z] Response headers:
+[2026-06-09T04:56:04.908Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:04.908Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:04.908Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:04.908Z]     'x-ms-request-id': 'ddaa6cb8-501e-0008-4ecc-f7f95d000000'
+[2026-06-09T04:56:04.908Z]     'x-ms-client-request-id': 'c09176fd-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:04.908Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:04.908Z]     'Date': 'Tue, 09 Jun 2026 04:56:04 GMT'
+[2026-06-09T04:56:04.908Z] Request URL: 'https://inventorytestregion.blob.core.windows.net/testcontainer?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:04.908Z] Request method: 'GET'
+[2026-06-09T04:56:04.908Z] Request headers:
+[2026-06-09T04:56:04.908Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:04.908Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:04.908Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:04.909Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:04.909Z]     'x-ms-client-request-id': 'c09176fe-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:04.909Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:04.909Z] No body was attached to the request
+[2026-06-09T04:56:04.972Z] Response status: 403
+[2026-06-09T04:56:04.972Z] Response headers:
+[2026-06-09T04:56:04.972Z]     'Content-Length': '279'
+[2026-06-09T04:56:04.972Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:04.972Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:04.972Z]     'x-ms-request-id': 'ddaa6cf2-501e-0008-7bcc-f7f95d000000'
+[2026-06-09T04:56:04.972Z]     'x-ms-client-request-id': 'c09176fe-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:04.972Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:04.972Z]     'x-ms-error-code': 'AuthorizationPermissionMismatch'
+[2026-06-09T04:56:04.972Z]     'Date': 'Tue, 09 Jun 2026 04:56:04 GMT'
+[2026-06-09T04:56:04.973Z] Failed to scan account inventorytestregion: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:04.973Z] RequestId:ddaa6cf2-501e-0008-7bcc-f7f95d000000
+[2026-06-09T04:56:04.973Z] Time:2026-06-09T04:56:04.9387790Z
+[2026-06-09T04:56:04.973Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:56:04.973Z] Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:04.973Z] RequestId:ddaa6cf2-501e-0008-7bcc-f7f95d000000
+[2026-06-09T04:56:04.973Z] Time:2026-06-09T04:56:04.9387790Z</Message></Error>
+[2026-06-09T04:56:04.973Z] Scanning Storage Account: stinvhost9922
+[2026-06-09T04:56:05.366Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:05.367Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:05.367Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:05.367Z] Request method: 'GET'
+[2026-06-09T04:56:05.367Z] Request headers:
+[2026-06-09T04:56:05.367Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:05.367Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:05.367Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:05.367Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:05.367Z]     'x-ms-client-request-id': 'c09176ff-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:05.367Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:05.367Z] No body was attached to the request
+[2026-06-09T04:56:05.683Z] Response status: 200
+[2026-06-09T04:56:05.683Z] Response headers:
+[2026-06-09T04:56:05.683Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:05.683Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:05.683Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:05.683Z]     'x-ms-request-id': 'b185e40e-d01e-0070-15cc-f768f4000000'
+[2026-06-09T04:56:05.683Z]     'x-ms-client-request-id': 'c09176ff-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:05.683Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:05.684Z]     'Date': 'Tue, 09 Jun 2026 04:56:05 GMT'
+[2026-06-09T04:56:05.684Z]   Skipping infrastructure container: app-package-func-lumen-inventory-d6058ff
+[2026-06-09T04:56:05.684Z]   Skipping infrastructure container: azure-webjobs-hosts
+[2026-06-09T04:56:05.684Z]   Skipping infrastructure container: azure-webjobs-secrets
+[2026-06-09T04:56:05.684Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots?restype=REDACTED&comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:05.684Z] Request method: 'GET'
+[2026-06-09T04:56:05.684Z] Request headers:
+[2026-06-09T04:56:05.684Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:05.684Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:05.684Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:05.684Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:05.684Z]     'x-ms-client-request-id': 'c2152ecc-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:05.684Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:05.684Z] No body was attached to the request
+[2026-06-09T04:56:05.906Z] Response status: 200
+[2026-06-09T04:56:05.906Z] Response headers:
+[2026-06-09T04:56:05.906Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:05.906Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:05.906Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:05.906Z]     'x-ms-request-id': 'b185e579-d01e-0070-6bcc-f768f4000000'
+[2026-06-09T04:56:05.906Z]     'x-ms-client-request-id': 'c2152ecc-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:05.906Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:05.906Z]     'Date': 'Tue, 09 Jun 2026 04:56:05 GMT'
+[2026-06-09T04:56:06.333Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:06.333Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:06.333Z] Request URL: 'https://stinvhost9922.file.core.windows.net/?comp=REDACTED&include=REDACTED'
+[2026-06-09T04:56:06.333Z] Request method: 'GET'
+[2026-06-09T04:56:06.333Z] Request headers:
+[2026-06-09T04:56:06.333Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:06.333Z]     'x-ms-file-request-intent': 'REDACTED'
+[2026-06-09T04:56:06.333Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:06.333Z]     'User-Agent': 'azsdk-python-storage-file-share/12.25.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:06.333Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:06.333Z]     'x-ms-client-request-id': 'c2152ecd-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:06.333Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:06.333Z] No body was attached to the request
+[2026-06-09T04:56:06.589Z] Response status: 200
+[2026-06-09T04:56:06.590Z] Response headers:
+[2026-06-09T04:56:06.590Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:06.590Z]     'Content-Type': 'application/xml'
+[2026-06-09T04:56:06.590Z]     'Server': 'Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:06.590Z]     'x-ms-request-id': '7964f3b1-401a-005d-1fcc-f7db87000000'
+[2026-06-09T04:56:06.590Z]     'x-ms-client-request-id': 'c2152ecd-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:06.590Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:06.590Z]     'Date': 'Tue, 09 Jun 2026 04:56:05 GMT'
+[2026-06-09T04:56:06.594Z] Batch 1/1 complete. Extracted 33 newly modified blobs, 0 file shares, 2 accounts succeeded, 2 accounts failed.
+[2026-06-09T04:56:06.595Z] Storage Utilization Statistics:
+[2026-06-09T04:56:06.595Z] [
+[2026-06-09T04:56:06.595Z]   {
+[2026-06-09T04:56:06.595Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:56:06.595Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:56:06.595Z]     "TotalBlobs":33,
+[2026-06-09T04:56:06.595Z]     "TotalSizeBytes":174339
+[2026-06-09T04:56:06.595Z]   }
+[2026-06-09T04:56:06.595Z] ]
+[2026-06-09T04:56:06.595Z] Blob Metadata Sample:
+[2026-06-09T04:56:06.595Z] [
+[2026-06-09T04:56:06.595Z]   {
+[2026-06-09T04:56:06.595Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:56:06.595Z]     "ResourceGroup":"inventory_management",
+[2026-06-09T04:56:06.595Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:56:06.595Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:56:06.596Z]     "BlobName":"2026\/06\/08\/blobs_report.xlsx",
+[2026-06-09T04:56:06.596Z]     "BlobType":"BlockBlob",
+[2026-06-09T04:56:06.596Z]     "ContentType":"application\/octet-stream",
+[2026-06-09T04:56:06.596Z]     "ContentMD5":"3cf2b438cffbf16a4f799e4bb6ed54b3",
+[2026-06-09T04:56:06.596Z]     "IsDeleted":false,
+[2026-06-09T04:56:06.596Z]     "Size_Bytes":5935,
+[2026-06-09T04:56:06.596Z]     "CreationTime":"2026-06-08 13:03:22",
+[2026-06-09T04:56:06.596Z]     "LastModified":"2026-06-08 13:03:22",
+[2026-06-09T04:56:06.596Z]     "BlobTier":"Hot",
+[2026-06-09T04:56:06.596Z]     "VersionId":null,
+[2026-06-09T04:56:06.596Z]     "IsCurrentVersion":null,
+[2026-06-09T04:56:06.596Z]     "Snapshot":null,
+[2026-06-09T04:56:06.596Z]     "TagCount":null
+[2026-06-09T04:56:06.596Z]   },
+[2026-06-09T04:56:06.596Z]   {
+[2026-06-09T04:56:06.601Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:56:06.601Z]     "ResourceGroup":"inventory_management",
+[2026-06-09T04:56:06.601Z]     "StorageAccount":"stinvhost9922",
+[2026-06-09T04:56:06.602Z]     "ContainerName":"inventory-snapshots",
+[2026-06-09T04:56:06.602Z]     "BlobName":"2026\/06\/08\/blobs_snapshot.json",
+[2026-06-09T04:56:06.602Z]     "BlobType":"BlockBlob",
+[2026-06-09T04:56:06.602Z]     "ContentType":"application\/octet-stream",
+[2026-06-09T04:56:06.602Z]     "ContentMD5":"abca414c45d9c0e5af7195435d982886",
+[2026-06-09T04:56:06.602Z]     "IsDeleted":false,
+[2026-06-09T04:56:06.602Z]     "Size_Bytes":4258,
+[2026-06-09T04:56:06.602Z]     "CreationTime":"2026-06-08 13:03:22",
+[2026-06-09T04:56:06.602Z]     "LastModified":"2026-06-08 13:03:22",
+[2026-06-09T04:56:06.602Z]     "BlobTier":"Hot",
+[2026-06-09T04:56:06.602Z]     "VersionId":null,
+[2026-06-09T04:56:06.602Z]     "IsCurrentVersion":null,
+[2026-06-09T04:56:06.602Z]     "Snapshot":null,
+[2026-06-09T04:56:06.602Z]     "TagCount":null
+[2026-06-09T04:56:06.602Z]   }
+[2026-06-09T04:56:06.602Z] ]
+[2026-06-09T04:56:06.602Z] Scan Errors:
+[2026-06-09T04:56:06.603Z] [
+[2026-06-09T04:56:06.603Z]   {
+[2026-06-09T04:56:06.603Z]     "StorageAccount":"inventoryprojecttest",
+[2026-06-09T04:56:06.603Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:56:06.603Z]     "ResourceGroup":"defaultresourcegroup-sea",
+[2026-06-09T04:56:06.603Z]     "ErrorType":"HttpResponseError",
+[2026-06-09T04:56:06.603Z]     "ErrorMessage":"This request is not authorized to perform this operation using this permission.\nRequestId:4e215395-401e-004d-62cc-f73dd4000000\nTime:2026-06-09T04:56:03.1574858Z\nErrorCode:AuthorizationPermissionMismatch\nContent: <?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>AuthorizationPermissionMismatch<\/Code><Message>This request is not authorized to perform this operation using this permission.\nRequestId:4e215395-401e-004d-62cc-f73dd4000000\nTime:2026-06-09T04:56:03.1574858Z<\/Message><\/Error>",
+[2026-06-09T04:56:06.603Z]     "Timestamp":"2026-06-09 04:56:03"
+[2026-06-09T04:56:06.603Z]   },
+[2026-06-09T04:56:06.603Z]   {
+[2026-06-09T04:56:06.603Z]     "StorageAccount":"inventorytestregion",
+[2026-06-09T04:56:06.603Z]     "SubscriptionId":"ca452141-812a-45da-a79b-a6beb43200e8",
+[2026-06-09T04:56:06.603Z]     "ResourceGroup":"defaultresourcegroup-sea",
+[2026-06-09T04:56:06.603Z]     "ErrorType":"HttpResponseError",
+[2026-06-09T04:56:06.603Z]     "ErrorMessage":"This request is not authorized to perform this operation using this permission.\nRequestId:ddaa6cf2-501e-0008-7bcc-f7f95d000000\nTime:2026-06-09T04:56:04.9387790Z\nErrorCode:AuthorizationPermissionMismatch\nContent: <?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>AuthorizationPermissionMismatch<\/Code><Message>This request is not authorized to perform this operation using this permission.\nRequestId:ddaa6cf2-501e-0008-7bcc-f7f95d000000\nTime:2026-06-09T04:56:04.9387790Z<\/Message><\/Error>",
+[2026-06-09T04:56:06.604Z]     "Timestamp":"2026-06-09 04:56:04"
+[2026-06-09T04:56:06.604Z]   }
+[2026-06-09T04:56:06.604Z] ]
+[2026-06-09T04:56:06.992Z] AzureCliCredential.get_token_info succeeded
+[2026-06-09T04:56:06.993Z] DefaultAzureCredential acquired a token from AzureCliCredential
+[2026-06-09T04:56:06.995Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots?restype=REDACTED'
+[2026-06-09T04:56:06.995Z] Request method: 'GET'
+[2026-06-09T04:56:06.995Z] Request headers:
+[2026-06-09T04:56:06.995Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:06.995Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:06.995Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:06.996Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:06.996Z]     'x-ms-client-request-id': 'c2152ece-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:06.996Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:06.996Z] No body was attached to the request
+[2026-06-09T04:56:07.244Z] Response status: 200
+[2026-06-09T04:56:07.244Z] Response headers:
+[2026-06-09T04:56:07.244Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.244Z]     'Last-Modified': 'Mon, 08 Jun 2026 13:03:22 GMT'
+[2026-06-09T04:56:07.244Z]     'ETag': '"0x8DEC55E51D7F432"'
+[2026-06-09T04:56:07.244Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.244Z]     'x-ms-request-id': 'daf08e65-501e-006e-49cc-f7842c000000'
+[2026-06-09T04:56:07.244Z]     'x-ms-client-request-id': 'c2152ece-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.245Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-lease-status': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-lease-state': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-has-immutability-policy': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-has-legal-hold': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-immutable-storage-with-versioning-enabled': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-default-encryption-scope': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-deny-encryption-scope-override': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.245Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/blobs_snapshot_20260609T045557_1f2d6f45_batch0.json'
+[2026-06-09T04:56:07.245Z] Request method: 'PUT'
+[2026-06-09T04:56:07.245Z] Request headers:
+[2026-06-09T04:56:07.245Z]     'Content-Length': '18181'
+[2026-06-09T04:56:07.245Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:07.245Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:07.245Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.245Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.245Z]     'x-ms-client-request-id': 'c30350f2-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.245Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.245Z] A body is sent with the request
+[2026-06-09T04:56:07.366Z] Response status: 201
+[2026-06-09T04:56:07.366Z] Response headers:
+[2026-06-09T04:56:07.366Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.366Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:07.366Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.366Z]     'ETag': '"0x8DEC5E36ACD7DA1"'
+[2026-06-09T04:56:07.366Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.366Z]     'x-ms-request-id': 'daf08eae-501e-006e-02cc-f7842c000000'
+[2026-06-09T04:56:07.366Z]     'x-ms-client-request-id': 'c30350f2-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.366Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.366Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:07.366Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:07.366Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.366Z] Uploaded JSON Snapshot: 2026/06/09/blobs_snapshot_20260609T045557_1f2d6f45_batch0.json (33 records)
+[2026-06-09T04:56:07.366Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/shares_snapshot_20260609T045557_1f2d6f45_batch0.json'
+[2026-06-09T04:56:07.366Z] Request method: 'PUT'
+[2026-06-09T04:56:07.366Z] Request headers:
+[2026-06-09T04:56:07.366Z]     'Content-Length': '2'
+[2026-06-09T04:56:07.366Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:07.367Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.367Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:07.367Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:07.367Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.367Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.367Z]     'x-ms-client-request-id': 'c30350f3-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.367Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.367Z] A body is sent with the request
+[2026-06-09T04:56:07.433Z] Response status: 201
+[2026-06-09T04:56:07.433Z] Response headers:
+[2026-06-09T04:56:07.433Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.433Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:07.433Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.433Z]     'ETag': '"0x8DEC5E36AD78E34"'
+[2026-06-09T04:56:07.433Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.433Z]     'x-ms-request-id': 'daf08f37-501e-006e-75cc-f7842c000000'
+[2026-06-09T04:56:07.433Z]     'x-ms-client-request-id': 'c30350f3-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.433Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.433Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:07.433Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:07.433Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.433Z] Uploaded JSON Snapshot: 2026/06/09/shares_snapshot_20260609T045557_1f2d6f45_batch0.json (0 records)
+[2026-06-09T04:56:07.433Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/scan_errors_20260609T045557_1f2d6f45_batch0.json'
+[2026-06-09T04:56:07.433Z] Request method: 'PUT'
+[2026-06-09T04:56:07.433Z] Request headers:
+[2026-06-09T04:56:07.433Z]     'Content-Length': '1452'
+[2026-06-09T04:56:07.433Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:07.433Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.433Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:07.433Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:07.434Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.434Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.434Z]     'x-ms-client-request-id': 'c30350f4-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.434Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.434Z] A body is sent with the request
+[2026-06-09T04:56:07.500Z] Response status: 201
+[2026-06-09T04:56:07.500Z] Response headers:
+[2026-06-09T04:56:07.500Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.500Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:07.500Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.500Z]     'ETag': '"0x8DEC5E36AE1C5DC"'
+[2026-06-09T04:56:07.501Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.501Z]     'x-ms-request-id': 'daf08f85-501e-006e-3ccc-f7842c000000'
+[2026-06-09T04:56:07.501Z]     'x-ms-client-request-id': 'c30350f4-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.501Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.501Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:07.501Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:07.501Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.501Z] Uploaded JSON Snapshot: 2026/06/09/scan_errors_20260609T045557_1f2d6f45_batch0.json (2 records)
+[2026-06-09T04:56:07.504Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/utilization_stats_20260609T045557_1f2d6f45_batch0.xlsx'
+[2026-06-09T04:56:07.504Z] Request method: 'PUT'
+[2026-06-09T04:56:07.504Z] Request headers:
+[2026-06-09T04:56:07.504Z]     'Content-Length': '4933'
+[2026-06-09T04:56:07.504Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:07.504Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.504Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:07.504Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:07.504Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.504Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.504Z]     'x-ms-client-request-id': 'c30350f5-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.504Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.504Z] A body is sent with the request
+[2026-06-09T04:56:07.575Z] Response status: 201
+[2026-06-09T04:56:07.575Z] Response headers:
+[2026-06-09T04:56:07.575Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.575Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:07.575Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.575Z]     'ETag': '"0x8DEC5E36AECADBA"'
+[2026-06-09T04:56:07.575Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.575Z]     'x-ms-request-id': 'daf08ffb-501e-006e-1ecc-f7842c000000'
+[2026-06-09T04:56:07.575Z]     'x-ms-client-request-id': 'c30350f5-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.575Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.575Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:07.575Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:07.575Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.575Z] Uploaded Excel Report: 2026/06/09/utilization_stats_20260609T045557_1f2d6f45_batch0.xlsx (1 records)
+[2026-06-09T04:56:07.582Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/blobs_report_20260609T045557_1f2d6f45_batch0.xlsx'
+[2026-06-09T04:56:07.582Z] Request method: 'PUT'
+[2026-06-09T04:56:07.582Z] Request headers:
+[2026-06-09T04:56:07.582Z]     'Content-Length': '8361'
+[2026-06-09T04:56:07.582Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:07.582Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.582Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:07.582Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:07.582Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.582Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.582Z]     'x-ms-client-request-id': 'c30350f6-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.582Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.582Z] A body is sent with the request
+[2026-06-09T04:56:07.649Z] Response status: 201
+[2026-06-09T04:56:07.649Z] Response headers:
+[2026-06-09T04:56:07.649Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.649Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:07.649Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.649Z]     'ETag': '"0x8DEC5E36AF8883C"'
+[2026-06-09T04:56:07.649Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.649Z]     'x-ms-request-id': 'daf0906c-501e-006e-04cc-f7842c000000'
+[2026-06-09T04:56:07.649Z]     'x-ms-client-request-id': 'c30350f6-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.649Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.649Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:07.649Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:07.649Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.650Z] Uploaded Excel Report: 2026/06/09/blobs_report_20260609T045557_1f2d6f45_batch0.xlsx (33 records)
+[2026-06-09T04:56:07.650Z] Request URL: 'https://stinvhost9922.blob.core.windows.net/inventory-snapshots/2026/06/09/scan_manifest_20260609T045557_1f2d6f45_batch0.json'
+[2026-06-09T04:56:07.650Z] Request method: 'PUT'
+[2026-06-09T04:56:07.650Z] Request headers:
+[2026-06-09T04:56:07.650Z]     'Content-Length': '894'
+[2026-06-09T04:56:07.650Z]     'x-ms-blob-type': 'REDACTED'
+[2026-06-09T04:56:07.650Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.650Z]     'Content-Type': 'application/octet-stream'
+[2026-06-09T04:56:07.650Z]     'Accept': 'application/xml'
+[2026-06-09T04:56:07.650Z]     'User-Agent': 'azsdk-python-storage-blob/12.29.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.650Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.650Z]     'x-ms-client-request-id': 'c30350f7-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.650Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.650Z] A body is sent with the request
+[2026-06-09T04:56:07.715Z] Response status: 201
+[2026-06-09T04:56:07.715Z] Response headers:
+[2026-06-09T04:56:07.715Z]     'Content-Length': '0'
+[2026-06-09T04:56:07.715Z]     'Content-MD5': 'REDACTED'
+[2026-06-09T04:56:07.715Z]     'Last-Modified': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.715Z]     'ETag': '"0x8DEC5E36B02B310"'
+[2026-06-09T04:56:07.715Z]     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.715Z]     'x-ms-request-id': 'daf090d3-501e-006e-60cc-f7842c000000'
+[2026-06-09T04:56:07.715Z]     'x-ms-client-request-id': 'c30350f7-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.715Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.715Z]     'x-ms-content-crc64': 'REDACTED'
+[2026-06-09T04:56:07.715Z]     'x-ms-request-server-encrypted': 'REDACTED'
+[2026-06-09T04:56:07.715Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.715Z] Uploaded Scan Manifest: 2026/06/09/scan_manifest_20260609T045557_1f2d6f45_batch0.json
+[2026-06-09T04:56:07.715Z] Worker successfully pushed all partitioned data to Warehouse (stinvhost9922/inventory-snapshots). Manifest: {
+[2026-06-09T04:56:07.715Z]   "run_id": "20260609T045557_1f2d6f45",
+[2026-06-09T04:56:07.715Z]   "batch_index": 0,
+[2026-06-09T04:56:07.715Z]   "total_batches": 1,
+[2026-06-09T04:56:07.715Z]   "total_accounts_in_run": 4,
+[2026-06-09T04:56:07.716Z]   "accounts_in_batch": 4,
+[2026-06-09T04:56:07.716Z]   "accounts_succeeded": 2,
+[2026-06-09T04:56:07.716Z]   "accounts_failed": 2,
+[2026-06-09T04:56:07.716Z]   "accounts_succeeded_list": [
+[2026-06-09T04:56:07.716Z]     "inventoryprojtest8b93",
+[2026-06-09T04:56:07.716Z]     "stinvhost9922"
+[2026-06-09T04:56:07.716Z]   ],
+[2026-06-09T04:56:07.716Z]   "accounts_failed_list": [
+[2026-06-09T04:56:07.716Z]     "inventoryprojecttest",
+[2026-06-09T04:56:07.716Z]     "inventorytestregion"
+[2026-06-09T04:56:07.716Z]   ],
+[2026-06-09T04:56:07.716Z]   "total_blobs_extracted": 33,
+[2026-06-09T04:56:07.716Z]   "total_shares_extracted": 0,
+[2026-06-09T04:56:07.716Z]   "total_size_bytes": 174339,
+[2026-06-09T04:56:07.716Z]   "incremental_watermark": "2026-05-10T04:56:02.566044+00:00",
+[2026-06-09T04:56:07.716Z]   "scan_start_time": "2026-06-09T04:56:01.821187+00:00",
+[2026-06-09T04:56:07.716Z]   "scan_end_time": "2026-06-09T04:56:07.647190+00:00",
+[2026-06-09T04:56:07.716Z]   "scan_duration_seconds": 5.83,
+[2026-06-09T04:56:07.716Z]   "excluded_container_prefixes": [
+[2026-06-09T04:56:07.716Z]     "azure-webjobs-",
+[2026-06-09T04:56:07.716Z]     "app-package-",
+[2026-06-09T04:56:07.716Z]     "scm-releases",
+[2026-06-09T04:56:07.716Z]     "$logs",
+[2026-06-09T04:56:07.716Z]     "$blobchangefeed",
+[2026-06-09T04:56:07.716Z]     "$web",
+[2026-06-09T04:56:07.716Z]     "$root"
+[2026-06-09T04:56:07.716Z]   ],
+[2026-06-09T04:56:07.716Z]   "warehouse_path": "stinvhost9922/inventory-snapshots/2026/06/09/"
+[2026-06-09T04:56:07.716Z] }
+[2026-06-09T04:56:07.716Z] Request URL: 'https://stinvhost9922.table.core.windows.net/Tables'
+[2026-06-09T04:56:07.716Z] Request method: 'POST'
+[2026-06-09T04:56:07.716Z] Request headers:
+[2026-06-09T04:56:07.716Z]     'Content-Type': 'application/json;odata=nometadata'
+[2026-06-09T04:56:07.716Z]     'Content-Length': '36'
+[2026-06-09T04:56:07.716Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.716Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:07.716Z]     'Accept': 'application/json;odata=minimalmetadata'
+[2026-06-09T04:56:07.716Z]     'x-ms-client-request-id': 'c30350f8-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.716Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.716Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.716Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.716Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.716Z] A body is sent with the request
+[2026-06-09T04:56:07.779Z] Response status: 409
+[2026-06-09T04:56:07.779Z] Response headers:
+[2026-06-09T04:56:07.779Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:07.779Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:07.779Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:07.779Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.779Z]     'x-ms-request-id': '98fad626-b002-002b-5ecc-f751cf000000'
+[2026-06-09T04:56:07.779Z]     'x-ms-client-request-id': 'c30350f8-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.779Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.779Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:07.780Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.780Z] Request URL: 'https://stinvhost9922.table.core.windows.net/InventoryWatermarks(PartitionKey='scanner',RowKey='last_sync_date')'
+[2026-06-09T04:56:07.780Z] Request method: 'PATCH'
+[2026-06-09T04:56:07.780Z] Request headers:
+[2026-06-09T04:56:07.780Z]     'Content-Type': 'application/json'
+[2026-06-09T04:56:07.780Z]     'Content-Length': '224'
+[2026-06-09T04:56:07.780Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.780Z]     'DataServiceVersion': 'REDACTED'
+[2026-06-09T04:56:07.780Z]     'Accept': 'application/json'
+[2026-06-09T04:56:07.780Z]     'x-ms-client-request-id': 'c30350f9-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.780Z]     'x-ms-date': 'REDACTED'
+[2026-06-09T04:56:07.780Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.780Z]     'User-Agent': 'azsdk-python-data-tables/12.7.0 Python/3.14.4 (Linux-7.0.0-1004-aws-x86_64-with-glibc2.43)'
+[2026-06-09T04:56:07.780Z]     'Authorization': 'REDACTED'
+[2026-06-09T04:56:07.780Z] A body is sent with the request
+[2026-06-09T04:56:07.841Z] Response status: 403
+[2026-06-09T04:56:07.841Z] Response headers:
+[2026-06-09T04:56:07.841Z]     'Cache-Control': 'no-cache'
+[2026-06-09T04:56:07.841Z]     'Transfer-Encoding': 'chunked'
+[2026-06-09T04:56:07.841Z]     'Content-Type': 'application/json;odata=minimalmetadata;streaming=true;charset=utf-8'
+[2026-06-09T04:56:07.841Z]     'Server': 'Windows-Azure-Table/1.0 Microsoft-HTTPAPI/2.0'
+[2026-06-09T04:56:07.841Z]     'x-ms-request-id': '98fad628-b002-002b-60cc-f751cf000000'
+[2026-06-09T04:56:07.841Z]     'x-ms-client-request-id': 'c30350f9-63ae-11f1-8000-0ac6dc5f96c9'
+[2026-06-09T04:56:07.842Z]     'x-ms-version': 'REDACTED'
+[2026-06-09T04:56:07.842Z]     'X-Content-Type-Options': 'REDACTED'
+[2026-06-09T04:56:07.842Z]     'Date': 'Tue, 09 Jun 2026 04:56:07 GMT'
+[2026-06-09T04:56:07.842Z] Failed to update watermark: This request is not authorized to perform this operation using this permission.
+[2026-06-09T04:56:07.842Z] RequestId:98fad628-b002-002b-60cc-f751cf000000
+[2026-06-09T04:56:07.842Z] Time:2026-06-09T04:56:07.8067385Z
+[2026-06-09T04:56:07.842Z] ErrorCode:AuthorizationPermissionMismatch
+[2026-06-09T04:56:07.842Z] Content: {"odata.error":{"code":"AuthorizationPermissionMismatch","message":{"lang":"en-US","value":"This request is not authorized to perform this operation using this permission.\nRequestId:98fad628-b002-002b-60cc-f751cf000000\nTime:2026-06-09T04:56:07.8067385Z"}}}
+[2026-06-09T04:56:07.842Z] Executed 'Functions.storage_inventory_worker' (Succeeded, Id=7a135e45-87f5-407f-84e0-c89986bf114c, Duration=6025ms)

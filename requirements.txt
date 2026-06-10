@@ -1,0 +1,13 @@
+# Uncomment to enable Azure Monitor OpenTelemetry
+# Ref: aka.ms/functions-azure-monitor-python 
+# azure-monitor-opentelemetry 
+
+azure-functions
+pandas
+azure-identity
+azure-mgmt-resourcegraph
+azure-storage-queue
+azure-storage-blob
+azure-storage-file-share
+azure-data-tables
+openpyxl
