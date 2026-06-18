@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>InventoryScanner</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.Functions.Worker.Core">
+      <HintPath>../publish/Microsoft.Azure.Functions.Worker.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>../publish/ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Core">
+      <HintPath>../publish/Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Data.Tables">
+      <HintPath>../publish/Azure.Data.Tables.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Functions.Worker.Extensions.Abstractions">
+      <HintPath>../publish/Microsoft.Azure.Functions.Worker.Extensions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Functions.Worker.Extensions.Http">
+      <HintPath>../publish/Microsoft.Azure.Functions.Worker.Extensions.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.ResourceManager">
+      <HintPath>../publish/Azure.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.ResourceManager.ResourceGraph">
+      <HintPath>../publish/Azure.ResourceManager.ResourceGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Storage.Queues">
+      <HintPath>../publish/Azure.Storage.Queues.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity">
+      <HintPath>../publish/Azure.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues">
+      <HintPath>../publish/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Storage.Blobs">
+      <HintPath>../publish/Azure.Storage.Blobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Storage.Files.Shares">
+      <HintPath>../publish/Azure.Storage.Files.Shares.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore">
+      <HintPath>../publish/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.WorkerService">
+      <HintPath>../publish/Microsoft.ApplicationInsights.WorkerService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights">
+      <HintPath>../publish/Microsoft.Azure.Functions.Worker.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data">
+      <HintPath>../publish/System.Memory.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
